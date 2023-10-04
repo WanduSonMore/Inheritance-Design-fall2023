@@ -96,7 +96,7 @@ void kingTest::read_capture() const
 	bool has_move7 = board[4][4].getMoves(board).contains('e5e4p');
 	bool has_move8 = board[4][4].getMoves(board).contains('e5f4p');
 	// VERIFY
-	assert(set_len == 8)
+	assert(set_len == 8);
 	assert(has_move1 == true);
 	assert(has_move2 == true);
 	assert(has_move3 == true);
