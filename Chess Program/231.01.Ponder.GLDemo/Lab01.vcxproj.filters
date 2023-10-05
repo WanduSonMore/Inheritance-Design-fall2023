@@ -45,6 +45,12 @@
     <ClCompile Include="testMove.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="board.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="piece.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="uiDraw.h">
@@ -75,6 +81,12 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="testMove.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="board.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="piece.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
