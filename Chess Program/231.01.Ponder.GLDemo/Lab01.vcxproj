@@ -115,8 +115,8 @@
     <ClInclude Include="move.h" />
     <ClInclude Include="piece.h" />
     <ClInclude Include="pieceType.h" />
+    <ClInclude Include="point.h" />
     <ClInclude Include="position.h" />
-    <ClInclude Include="Testing.h" />
     <ClInclude Include="testKing.h" />
     <ClInclude Include="testMove.h" />
     <ClInclude Include="testPawn.h" />

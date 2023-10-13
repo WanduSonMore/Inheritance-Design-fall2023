@@ -1,4 +1,6 @@
 #pragma once
+#include "board.h"
+#include "piece.h"
 class testPawn
 {
 public:
@@ -12,6 +14,7 @@ public:
 		getPromotion();
 	}
 private:
+	Board board = Board(true);
 	void getBlocked();
 	void getSimpleMove();
 	void getInitialMove();

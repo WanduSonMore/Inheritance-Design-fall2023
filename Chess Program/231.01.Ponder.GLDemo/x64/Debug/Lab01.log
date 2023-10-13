@@ -1,10 +1,180 @@
-﻿  move.cpp
-C:\git\Inheritance Design\Week 4\231.01.Ponder.GLDemo\move.cpp(11,10): fatal  error C1083: Cannot open include file: 'piece.h': No such file or directory
+﻿  board.cpp
+C:\git\Inheritance Design\True\piece.h(24,26): error C2061: syntax error: identifier 'Board'
+C:\git\Inheritance Design\True\board.cpp(78,20): error C2039: 'getMoves': is not a member of 'Board'
+C:\git\Inheritance Design\True\board.h(5,7): message : see declaration of 'Board'
+  move.cpp
+C:\git\Inheritance Design\True\board.h(8,7): error C2143: syntax error: missing ';' before '*'
+C:\git\Inheritance Design\True\board.h(8,7): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+C:\git\Inheritance Design\True\board.h(8,20): error C2238: unexpected token(s) preceding ';'
+C:\git\Inheritance Design\True\board.h(12,13): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+C:\git\Inheritance Design\True\board.h(12,13): error C2143: syntax error: missing ';' before '&'
+C:\git\Inheritance Design\True\board.h(12,52): error C2238: unexpected token(s) preceding ';'
+C:\git\Inheritance Design\True\board.h(14,30): error C2061: syntax error: identifier 'Piece'
+C:\git\Inheritance Design\True\board.h(15,8): error C3646: 'getPiece': unknown override specifier
+C:\git\Inheritance Design\True\board.h(15,16): error C2059: syntax error: '('
+C:\git\Inheritance Design\True\board.h(15,30): error C2238: unexpected token(s) preceding ';'
+C:\git\Inheritance Design\True\move.cpp(36,24): error C2676: binary '[': 'const Board' does not define this operator or a conversion to a type acceptable to the predefined operator
+C:\git\Inheritance Design\True\move.cpp(39,26): error C2676: binary '[': 'const Board' does not define this operator or a conversion to a type acceptable to the predefined operator
+C:\git\Inheritance Design\True\move.cpp(42,40): error C2676: binary '[': 'const Board' does not define this operator or a conversion to a type acceptable to the predefined operator
+  piece.cpp
+C:\git\Inheritance Design\True\board.h(8,7): error C2143: syntax error: missing ';' before '*'
+C:\git\Inheritance Design\True\board.h(8,7): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+C:\git\Inheritance Design\True\board.h(8,20): error C2238: unexpected token(s) preceding ';'
+C:\git\Inheritance Design\True\board.h(12,13): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+C:\git\Inheritance Design\True\board.h(12,13): error C2143: syntax error: missing ';' before '&'
+C:\git\Inheritance Design\True\board.h(12,52): error C2238: unexpected token(s) preceding ';'
+C:\git\Inheritance Design\True\board.h(14,30): error C2061: syntax error: identifier 'Piece'
+C:\git\Inheritance Design\True\board.h(15,8): error C3646: 'getPiece': unknown override specifier
+C:\git\Inheritance Design\True\board.h(15,16): error C2059: syntax error: '('
+C:\git\Inheritance Design\True\board.h(15,30): error C2238: unexpected token(s) preceding ';'
   testKing.cpp
-C:\git\Inheritance Design\Week 4\231.01.Ponder.GLDemo\testKing.cpp(2,10): fatal  error C1083: Cannot open include file: 'king.h': No such file or directory
-  testMove.cpp
+C:\git\Inheritance Design\True\piece.h(24,26): error C2061: syntax error: identifier 'Board'
+C:\git\Inheritance Design\True\testKing.cpp(26,12): error C2676: binary '[': 'const Piece' does not define this operator or a conversion to a type acceptable to the predefined operator
+C:\git\Inheritance Design\True\testKing.cpp(28,27): error C2676: binary '[': 'const Piece' does not define this operator or a conversion to a type acceptable to the predefined operator
+C:\git\Inheritance Design\True\testKing.cpp(29,29): error C2676: binary '[': 'const Piece' does not define this operator or a conversion to a type acceptable to the predefined operator
+C:\git\Inheritance Design\True\testKing.cpp(30,29): error C2676: binary '[': 'const Piece' does not define this operator or a conversion to a type acceptable to the predefined operator
+C:\git\Inheritance Design\True\testKing.cpp(31,29): error C2676: binary '[': 'const Piece' does not define this operator or a conversion to a type acceptable to the predefined operator
+C:\git\Inheritance Design\True\testKing.cpp(32,29): error C2676: binary '[': 'const Piece' does not define this operator or a conversion to a type acceptable to the predefined operator
+C:\git\Inheritance Design\True\testKing.cpp(33,29): error C2676: binary '[': 'const Piece' does not define this operator or a conversion to a type acceptable to the predefined operator
+C:\git\Inheritance Design\True\testKing.cpp(34,29): error C2676: binary '[': 'const Piece' does not define this operator or a conversion to a type acceptable to the predefined operator
+C:\git\Inheritance Design\True\testKing.cpp(35,29): error C2676: binary '[': 'const Piece' does not define this operator or a conversion to a type acceptable to the predefined operator
+C:\git\Inheritance Design\True\testKing.cpp(36,29): error C2676: binary '[': 'const Piece' does not define this operator or a conversion to a type acceptable to the predefined operator
+C:\git\Inheritance Design\True\testKing.cpp(38,2): warning C4806: '==': unsafe operation: no value of type 'bool' promoted to type 'int' can equal the given constant
+C:\git\Inheritance Design\True\testKing.cpp(48,7): error C2662: 'void Board::resetBlank(void)': cannot convert 'this' pointer from 'const Board' to 'Board &'
+C:\git\Inheritance Design\True\testKing.cpp(48,2): message : Conversion loses qualifiers
+C:\git\Inheritance Design\True\board.h(17,7): message : see declaration of 'Board::resetBlank'
+C:\git\Inheritance Design\True\testKing.cpp(48,7): message : while trying to match the argument list '()'
+C:\git\Inheritance Design\True\testKing.cpp(55,12): error C2676: binary '[': 'const Piece' does not define this operator or a conversion to a type acceptable to the predefined operator
+C:\git\Inheritance Design\True\testKing.cpp(57,12): error C2676: binary '[': 'const Piece' does not define this operator or a conversion to a type acceptable to the predefined operator
+C:\git\Inheritance Design\True\testKing.cpp(58,12): error C2676: binary '[': 'const Piece' does not define this operator or a conversion to a type acceptable to the predefined operator
+C:\git\Inheritance Design\True\testKing.cpp(59,12): error C2676: binary '[': 'const Piece' does not define this operator or a conversion to a type acceptable to the predefined operator
+C:\git\Inheritance Design\True\testKing.cpp(60,12): error C2676: binary '[': 'const Piece' does not define this operator or a conversion to a type acceptable to the predefined operator
+C:\git\Inheritance Design\True\testKing.cpp(61,12): error C2676: binary '[': 'const Piece' does not define this operator or a conversion to a type acceptable to the predefined operator
+C:\git\Inheritance Design\True\testKing.cpp(62,12): error C2676: binary '[': 'const Piece' does not define this operator or a conversion to a type acceptable to the predefined operator
+C:\git\Inheritance Design\True\testKing.cpp(63,12): error C2676: binary '[': 'const Piece' does not define this operator or a conversion to a type acceptable to the predefined operator
+C:\git\Inheritance Design\True\testKing.cpp(64,12): error C2676: binary '[': 'const Piece' does not define this operator or a conversion to a type acceptable to the predefined operator
+C:\git\Inheritance Design\True\testKing.cpp(66,29): error C2676: binary '[': 'const Piece' does not define this operator or a conversion to a type acceptable to the predefined operator
+C:\git\Inheritance Design\True\testKing.cpp(70,7): error C2662: 'void Board::resetBlank(void)': cannot convert 'this' pointer from 'const Board' to 'Board &'
+C:\git\Inheritance Design\True\testKing.cpp(70,2): message : Conversion loses qualifiers
+C:\git\Inheritance Design\True\board.h(17,7): message : see declaration of 'Board::resetBlank'
+C:\git\Inheritance Design\True\testKing.cpp(70,7): message : while trying to match the argument list '()'
+C:\git\Inheritance Design\True\testKing.cpp(77,12): error C2676: binary '[': 'const Piece' does not define this operator or a conversion to a type acceptable to the predefined operator
+C:\git\Inheritance Design\True\testKing.cpp(79,12): error C2676: binary '[': 'const Piece' does not define this operator or a conversion to a type acceptable to the predefined operator
+C:\git\Inheritance Design\True\testKing.cpp(80,12): error C2676: binary '[': 'const Piece' does not define this operator or a conversion to a type acceptable to the predefined operator
+C:\git\Inheritance Design\True\testKing.cpp(81,12): error C2676: binary '[': 'const Piece' does not define this operator or a conversion to a type acceptable to the predefined operator
+C:\git\Inheritance Design\True\testKing.cpp(82,12): error C2676: binary '[': 'const Piece' does not define this operator or a conversion to a type acceptable to the predefined operator
+C:\git\Inheritance Design\True\testKing.cpp(83,12): error C2676: binary '[': 'const Piece' does not define this operator or a conversion to a type acceptable to the predefined operator
+C:\git\Inheritance Design\True\testKing.cpp(84,12): error C2676: binary '[': 'const Piece' does not define this operator or a conversion to a type acceptable to the predefined operator
+C:\git\Inheritance Design\True\testKing.cpp(85,12): error C2676: binary '[': 'const Piece' does not define this operator or a conversion to a type acceptable to the predefined operator
+C:\git\Inheritance Design\True\testKing.cpp(86,12): error C2676: binary '[': 'const Piece' does not define this operator or a conversion to a type acceptable to the predefined operator
+C:\git\Inheritance Design\True\testKing.cpp(88,27): error C2676: binary '[': 'const Piece' does not define this operator or a conversion to a type acceptable to the predefined operator
+C:\git\Inheritance Design\True\testKing.cpp(89,29): error C2676: binary '[': 'const Piece' does not define this operator or a conversion to a type acceptable to the predefined operator
+C:\git\Inheritance Design\True\testKing.cpp(89,56): error C2015: too many characters in constant
+C:\git\Inheritance Design\True\testKing.cpp(90,29): error C2676: binary '[': 'const Piece' does not define this operator or a conversion to a type acceptable to the predefined operator
+C:\git\Inheritance Design\True\testKing.cpp(90,56): error C2015: too many characters in constant
+C:\git\Inheritance Design\True\testKing.cpp(91,29): error C2676: binary '[': 'const Piece' does not define this operator or a conversion to a type acceptable to the predefined operator
+C:\git\Inheritance Design\True\testKing.cpp(91,56): error C2015: too many characters in constant
+C:\git\Inheritance Design\True\testKing.cpp(92,29): error C2676: binary '[': 'const Piece' does not define this operator or a conversion to a type acceptable to the predefined operator
+C:\git\Inheritance Design\True\testKing.cpp(92,56): error C2015: too many characters in constant
+C:\git\Inheritance Design\True\testKing.cpp(93,29): error C2676: binary '[': 'const Piece' does not define this operator or a conversion to a type acceptable to the predefined operator
+C:\git\Inheritance Design\True\testKing.cpp(93,56): error C2015: too many characters in constant
+C:\git\Inheritance Design\True\testKing.cpp(94,29): error C2676: binary '[': 'const Piece' does not define this operator or a conversion to a type acceptable to the predefined operator
+C:\git\Inheritance Design\True\testKing.cpp(94,56): error C2015: too many characters in constant
+C:\git\Inheritance Design\True\testKing.cpp(95,29): error C2676: binary '[': 'const Piece' does not define this operator or a conversion to a type acceptable to the predefined operator
+C:\git\Inheritance Design\True\testKing.cpp(95,56): error C2015: too many characters in constant
+C:\git\Inheritance Design\True\testKing.cpp(96,29): error C2676: binary '[': 'const Piece' does not define this operator or a conversion to a type acceptable to the predefined operator
+C:\git\Inheritance Design\True\testKing.cpp(96,56): error C2015: too many characters in constant
+C:\git\Inheritance Design\True\testKing.cpp(98,2): warning C4806: '==': unsafe operation: no value of type 'bool' promoted to type 'int' can equal the given constant
+C:\git\Inheritance Design\True\testKing.cpp(108,7): error C2662: 'void Board::resetBlank(void)': cannot convert 'this' pointer from 'const Board' to 'Board &'
+C:\git\Inheritance Design\True\testKing.cpp(108,2): message : Conversion loses qualifiers
+C:\git\Inheritance Design\True\board.h(17,7): message : see declaration of 'Board::resetBlank'
+C:\git\Inheritance Design\True\testKing.cpp(108,7): message : while trying to match the argument list '()'
+C:\git\Inheritance Design\True\testKing.cpp(115,12): error C2676: binary '[': 'const Piece' does not define this operator or a conversion to a type acceptable to the predefined operator
+C:\git\Inheritance Design\True\testKing.cpp(116,12): error C2676: binary '[': 'const Piece' does not define this operator or a conversion to a type acceptable to the predefined operator
+C:\git\Inheritance Design\True\testKing.cpp(118,12): error C2676: binary '[': 'const Piece' does not define this operator or a conversion to a type acceptable to the predefined operator
+C:\git\Inheritance Design\True\testKing.cpp(120,12): error C2676: binary '[': 'const Piece' does not define this operator or a conversion to a type acceptable to the predefined operator
+C:\git\Inheritance Design\True\testKing.cpp(122,12): error C2676: binary '[': 'const Piece' does not define this operator or a conversion to a type acceptable to the predefined operator
+C:\git\Inheritance Design\True\testKing.cpp(124,12): error C2676: binary '[': 'const Piece' does not define this operator or a conversion to a type acceptable to the predefined operator
+C:\git\Inheritance Design\True\testKing.cpp(126,12): error C2676: binary '[': 'const Piece' does not define this operator or a conversion to a type acceptable to the predefined operator
+C:\git\Inheritance Design\True\testKing.cpp(128,27): error C2676: binary '[': 'const Piece' does not define this operator or a conversion to a type acceptable to the predefined operator
+C:\git\Inheritance Design\True\testKing.cpp(129,29): error C2676: binary '[': 'const Piece' does not define this operator or a conversion to a type acceptable to the predefined operator
+C:\git\Inheritance Design\True\testKing.cpp(130,29): error C2676: binary '[': 'const Piece' does not define this operator or a conversion to a type acceptable to the predefined operator
+C:\git\Inheritance Design\True\testKing.cpp(132,2): warning C4806: '==': unsafe operation: no value of type 'bool' promoted to type 'int' can equal the given constant
+C:\git\Inheritance Design\True\testKing.cpp(136,7): error C2662: 'void Board::resetBlank(void)': cannot convert 'this' pointer from 'const Board' to 'Board &'
+C:\git\Inheritance Design\True\testKing.cpp(136,2): message : Conversion loses qualifiers
+C:\git\Inheritance Design\True\board.h(17,7): message : see declaration of 'Board::resetBlank'
+C:\git\Inheritance Design\True\testKing.cpp(136,7): message : while trying to match the argument list '()'
+C:\git\Inheritance Design\True\testKing.cpp(143,12): error C2676: binary '[': 'const Piece' does not define this operator or a conversion to a type acceptable to the predefined operator
+C:\git\Inheritance Design\True\testKing.cpp(145,12): error C2676: binary '[': 'const Piece' does not define this operator or a conversion to a type acceptable to the predefined operator
+C:\git\Inheritance Design\True\testKing.cpp(147,12): error C2676: binary '[': 'const Piece' does not define this operator or a conversion to a type acceptable to the predefined operator
+C:\git\Inheritance Design\True\testKing.cpp(149,12): error C2676: binary '[': 'const Piece' does not define this operator or a conversion to a type acceptable to the predefined operator
+C:\git\Inheritance Design\True\testKing.cpp(151,12): error C2676: binary '[': 'const Piece' does not define this operator or a conversion to a type acceptable to the predefined operator
+C:\git\Inheritance Design\True\testKing.cpp(152,12): error C2676: binary '[': 'const Piece' does not define this operator or a conversion to a type acceptable to the predefined operator
+C:\git\Inheritance Design\True\testKing.cpp(154,12): error C2676: binary '[': 'const Piece' does not define this operator or a conversion to a type acceptable to the predefined operator
+C:\git\Inheritance Design\True\testKing.cpp(155,12): error C2676: binary '[': 'const Piece' does not define this operator or a conversion to a type acceptable to the predefined operator
+C:\git\Inheritance Design\True\testKing.cpp(157,27): error C2676: binary '[': 'const Piece' does not define this operator or a conversion to a type acceptable to the predefined operator
+C:\git\Inheritance Design\True\testKing.cpp(158,29): error C2676: binary '[': 'const Piece' does not define this operator or a conversion to a type acceptable to the predefined operator
+C:\git\Inheritance Design\True\testKing.cpp(159,29): error C2676: binary '[': 'const Piece' does not define this operator or a conversion to a type acceptable to the predefined operator
+C:\git\Inheritance Design\True\testKing.cpp(161,2): warning C4806: '==': unsafe operation: no value of type 'bool' promoted to type 'int' can equal the given constant
+C:\git\Inheritance Design\True\testKing.cpp(165,7): error C2662: 'void Board::resetBlank(void)': cannot convert 'this' pointer from 'const Board' to 'Board &'
+C:\git\Inheritance Design\True\testKing.cpp(165,2): message : Conversion loses qualifiers
+C:\git\Inheritance Design\True\board.h(17,7): message : see declaration of 'Board::resetBlank'
+C:\git\Inheritance Design\True\testKing.cpp(165,7): message : while trying to match the argument list '()'
+C:\git\Inheritance Design\True\testKing.cpp(172,12): error C2676: binary '[': 'const Piece' does not define this operator or a conversion to a type acceptable to the predefined operator
+C:\git\Inheritance Design\True\testKing.cpp(174,12): error C2676: binary '[': 'const Piece' does not define this operator or a conversion to a type acceptable to the predefined operator
+C:\git\Inheritance Design\True\testKing.cpp(176,12): error C2676: binary '[': 'const Piece' does not define this operator or a conversion to a type acceptable to the predefined operator
+C:\git\Inheritance Design\True\testKing.cpp(178,12): error C2676: binary '[': 'const Piece' does not define this operator or a conversion to a type acceptable to the predefined operator
+C:\git\Inheritance Design\True\testKing.cpp(180,12): error C2676: binary '[': 'const Piece' does not define this operator or a conversion to a type acceptable to the predefined operator
+C:\git\Inheritance Design\True\testKing.cpp(182,12): error C2676: binary '[': 'const Piece' does not define this operator or a conversion to a type acceptable to the predefined operator
+C:\git\Inheritance Design\True\testKing.cpp(184,12): error C2676: binary '[': 'const Piece' does not define this operator or a conversion to a type acceptable to the predefined operator
+C:\git\Inheritance Design\True\testKing.cpp(186,12): error C2676: binary '[': 'const Piece' does not define this operator or a conversion to a type acceptable to the predefined operator
+C:\git\Inheritance Design\True\testKing.cpp(188,27): error C2676: binary '[': 'const Piece' does not define this operator or a conversion to a type acceptable to the predefined operator
+C:\git\Inheritance Design\True\testKing.cpp(189,29): error C2676: binary '[': 'const Piece' does not define this operator or a conversion to a type acceptable to the predefined operator
+C:\git\Inheritance Design\True\testKing.cpp(190,29): error C2676: binary '[': 'const Piece' does not define this operator or a conversion to a type acceptable to the predefined operator
+C:\git\Inheritance Design\True\testKing.cpp(192,2): warning C4806: '==': unsafe operation: no value of type 'bool' promoted to type 'int' can equal the given constant
+C:\git\Inheritance Design\True\testKing.cpp(196,7): error C2662: 'void Board::resetBlank(void)': cannot convert 'this' pointer from 'const Board' to 'Board &'
+C:\git\Inheritance Design\True\testKing.cpp(196,2): message : Conversion loses qualifiers
+C:\git\Inheritance Design\True\board.h(17,7): message : see declaration of 'Board::resetBlank'
+C:\git\Inheritance Design\True\testKing.cpp(196,7): message : while trying to match the argument list '()'
+C:\git\Inheritance Design\True\testKing.cpp(203,12): error C2676: binary '[': 'const Piece' does not define this operator or a conversion to a type acceptable to the predefined operator
+C:\git\Inheritance Design\True\testKing.cpp(205,12): error C2676: binary '[': 'const Piece' does not define this operator or a conversion to a type acceptable to the predefined operator
+C:\git\Inheritance Design\True\testKing.cpp(207,12): error C2676: binary '[': 'const Piece' does not define this operator or a conversion to a type acceptable to the predefined operator
+C:\git\Inheritance Design\True\testKing.cpp(209,12): error C2676: binary '[': 'const Piece' does not define this operator or a conversion to a type acceptable to the predefined operator
+C:\git\Inheritance Design\True\testKing.cpp(211,12): error C2676: binary '[': 'const Piece' does not define this operator or a conversion to a type acceptable to the predefined operator
+C:\git\Inheritance Design\True\testKing.cpp(213,12): error C2676: binary '[': 'const Piece' does not define this operator or a conversion to a type acceptable to the predefined operator
+C:\git\Inheritance Design\True\testKing.cpp(215,27): error C2676: binary '[': 'const Piece' does not define this operator or a conversion to a type acceptable to the predefined operator
+C:\git\Inheritance Design\True\testKing.cpp(216,29): error C2676: binary '[': 'const Piece' does not define this operator or a conversion to a type acceptable to the predefined operator
+C:\git\Inheritance Design\True\testKing.cpp(217,29): error C2676: binary '[': 'const Piece' does not define this operator or a conversion to a type acceptable to the predefined operator
+C:\git\Inheritance Design\True\testKing.cpp(218,29): error C2676: binary '[': 'const Piece' does not define this operator or a conversion to a type acceptable to the predefined operator
+C:\git\Inheritance Design\True\testKing.cpp(218,56): error C2015: too many characters in constant
+C:\git\Inheritance Design\True\testKing.cpp(219,29): error C2676: binary '[': 'const Piece' does not define this operator or a conversion to a type acceptable to the predefined operator
+C:\git\Inheritance Design\True\testKing.cpp(219,56): error C2015: too many characters in constant
+C:\git\Inheritance Design\True\testKing.cpp(221,2): warning C4806: '==': unsafe operation: no value of type 'bool' promoted to type 'int' can equal the given constant
+C:\git\Inheritance Design\True\testKing.cpp(227,7): error C2662: 'void Board::resetBlank(void)': cannot convert 'this' pointer from 'const Board' to 'Board &'
+C:\git\Inheritance Design\True\testKing.cpp(227,2): message : Conversion loses qualifiers
+C:\git\Inheritance Design\True\board.h(17,7): message : see declaration of 'Board::resetBlank'
+C:\git\Inheritance Design\True\testKing.cpp(227,7): message : while trying to match the argument list '()'
   testPawn.cpp
-C:\git\Inheritance Design\Week 4\231.01.Ponder.GLDemo\testPawn.cpp(2,10): fatal  error C1083: Cannot open include file: 'pawn.h': No such file or directory
-  testPosition.cpp
-  uiInteract.cpp
+C:\git\Inheritance Design\True\piece.h(24,26): error C2061: syntax error: identifier 'Board'
+C:\git\Inheritance Design\True\testPawn.cpp(29,38): error C2660: 'Piece::getMoves': function does not take 1 arguments
+C:\git\Inheritance Design\True\piece.h(24,17): message : see declaration of 'Piece::getMoves'
+C:\git\Inheritance Design\True\testPawn.cpp(29,38): message : while trying to match the argument list '(Board)'
+C:\git\Inheritance Design\True\testPawn.cpp(44,29): error C2660: 'Piece::getMoves': function does not take 1 arguments
+C:\git\Inheritance Design\True\piece.h(24,17): message : see declaration of 'Piece::getMoves'
+C:\git\Inheritance Design\True\testPawn.cpp(44,29): message : while trying to match the argument list '(Board)'
+C:\git\Inheritance Design\True\testPawn.cpp(58,29): error C2660: 'Piece::getMoves': function does not take 1 arguments
+C:\git\Inheritance Design\True\piece.h(24,17): message : see declaration of 'Piece::getMoves'
+C:\git\Inheritance Design\True\testPawn.cpp(58,29): message : while trying to match the argument list '(Board)'
+C:\git\Inheritance Design\True\testPawn.cpp(77,29): error C2660: 'Piece::getMoves': function does not take 1 arguments
+C:\git\Inheritance Design\True\piece.h(24,17): message : see declaration of 'Piece::getMoves'
+C:\git\Inheritance Design\True\testPawn.cpp(77,29): message : while trying to match the argument list '(Board)'
+C:\git\Inheritance Design\True\testPawn.cpp(99,29): error C2660: 'Piece::getMoves': function does not take 1 arguments
+C:\git\Inheritance Design\True\piece.h(24,17): message : see declaration of 'Piece::getMoves'
+C:\git\Inheritance Design\True\testPawn.cpp(99,29): message : while trying to match the argument list '(Board)'
+C:\git\Inheritance Design\True\testPawn.cpp(113,38): error C2660: 'Piece::getMoves': function does not take 1 arguments
+C:\git\Inheritance Design\True\piece.h(24,17): message : see declaration of 'Piece::getMoves'
+C:\git\Inheritance Design\True\testPawn.cpp(113,38): message : while trying to match the argument list '(Board)'
+C:\git\Inheritance Design\True\testPawn.cpp(113,92): error C2660: 'Piece::getMoves': function does not take 1 arguments
+C:\git\Inheritance Design\True\piece.h(24,17): message : see declaration of 'Piece::getMoves'
+C:\git\Inheritance Design\True\testPawn.cpp(113,92): message : while trying to match the argument list '(Board)'
   Generating Code...

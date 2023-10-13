@@ -1,6 +1,4 @@
 #include "testPawn.h"
-#include "pawn.h"
-#include "board.h"
 #include <cassert>
 #include <set>
 #include <string>
@@ -23,90 +21,98 @@
 void testPawn::getBlocked()
 {
 	// SETUP
-	Board board;
 	// white pawn position d4
-	board[3][3] = new Pawn(3, 3, true);
+	board.setPlace(3, 3, new Pawn(3, 3, true));
 	// black pawn position d5
-	board[4][3] = new Pawn(4, 3, false);
+	board.setPlace(4, 3, new Pawn(4, 3, false));
 	// EXERCISE
-	bool no_moves = board[3][3].getMoves(board).empty();
+	bool no_moves = board.getPiece(3, 3).getMoves(board).empty();
 	// VERIFY
 	assert(no_moves == true);
-}   // TEARDOWN
+	// TEARDOWN
+	board.resetBlank();
+}   
 
 void testPawn::getSimpleMove()
 {
 	// SETUP
-	Board board;
 	// white pawn position b4
-	board[3][1] = new Pawn(3, 1, true);
+	board.setPlace(3, 1, new Pawn(3, 1, true));
+	board.getPiece(3, 1).isMove();
 	// EXERCISE
-	bool has_move = board[3][1].getMoves(board).contains('b4b5');
+	set<string> move;
+	move = board.getPiece(3, 1).getMoves(board);
 	// VERIFY
-	assert(has_move == true);
-}   // TEARDOWN
+	assert(move.find("b4b5") != move.end());
+	// TEARDOWN
+	board.resetBlank();
+} 
 
 void testPawn::getInitialMove()
 {
 	// SETUP
-	Board board;
 	// white pawn position b2
-	board[1][1] = new Pawn(1, 1, true);
+	board.setPlace(1, 1, new Pawn(1, 1, true));
 	// EXERCISE
-	bool has_move = board[1][1].getMoves(board).contains('b2b3');
-	bool has_move2 = board[1][1].getMoves(board).contains('b2b4');
+	set<string> move;
+	move = board.getPiece(1, 1).getMoves(board);
 	// VERIFY
-	assert(has_move == true);
-	assert(has_move2 == true);
-}   // TEARDOWN
+	assert(move.find("b2b3") != move.end());
+	assert(move.find("b2b4") != move.end());
+	// TEARDOWN
+	board.resetBlank();
+}   
 
 void testPawn::getCapture()
 {
 	// SETUP
-	Board board;
 	// white pawn position b6
-	board[5][1] = new Pawn(5, 1, true);
+	board.setPlace(5, 1, new Pawn(5, 1, true));
 	// black pawns positions a7, b7, and c7 
-	board[6][0] = new Pawn(6, 0, false);
-	board[6][1] = new Pawn(6, 1, false);
-	board[6][2] = new pawn(6, 2, false);
+	board.setPlace(6, 0, new Pawn(6, 0, false));
+	board.setPlace(6, 1, new Pawn(6, 1, false));
+	board.setPlace(6, 2, new Pawn(6, 2, false));
 	// EXERCISE
-	bool has_move = board[5][1].getMoves().contains('b6a7p');
-	bool has_move2 = board[5][1].getMoves().contains('b6c7p');
+	set<string> move;
+	move = board.getPiece(5, 1).getMoves(board);
 	// VERIFY
-	assert(has_move == true);
-	assert(has_move2 == true);
-}   // TEARDOWN
+	assert(move.find("b6a7p") != move.end());
+	assert(move.find("b6c7p") != move.end());
+	// TEARDOWN
+	board.resetBlank();
+}  
 
 void testPawn::getEnpassant()
 {
 	// SETUP
-	Board board;
 	// white pawn position b5
-	board[4][1] = new Pawn(4, 1, true);
+	board.setPlace(4, 1, new Pawn(4, 1, true));
 	// black pawns position b6
-	board[5][0] = new Pawn(5, 0, false);
+	board.setPlace(5, 0, new Pawn(5, 0, false));
 	// black pawns positions a6 and c6, each one made 1 move
-	board[5][0].isMove();
-	board[5][2] = new Pawn(5, 2, false);
-	board[5][2].isMove();
-	board[5][1] = new Pawn(5, 1, false);
+	board.getPiece(5, 0).isMove();
+	board.setPlace(5, 2, new Pawn(5, 2, false));
+	board.getPiece(5, 2).isMove();
+	board.setPlace(5, 1, new Pawn(5, 1, false));
 	// EXERCISE
-	bool has_move = board[3][1].getMoves().contains('b5c6E');
-	bool has_move2 = board[3][1].getMoves().contains('b5a6E');
+	set<string> move;
+	move = board.getPiece(3, 1).getMoves(board);
 	// VERIFY
-	assert(has_move == true);
-	assert(has_move2 == true);
-}   // TEARDOWN
+	assert(move.find("b5c6E") != move.end());
+	assert(move.find("b5a6E") != move.end());
+	// TEARDOWN
+	board.resetBlank();
+}  
 
 void testPawn::getPromotion()
 {
 	// SETUP
-	Board board;
 	// white pawn position b7
-	board[1][1] = new Pawn(3, 1, true);
+	board.setPlace(1, 1, new Pawn(1, 1, true));
 	// EXERCISE
-	bool has_move = board[1][1].getMoves().contains('b7b8Q');
+	bool has_move = board.getPiece(1, 1).getMoves(board).find("b7b8Q") != board.getPiece(1, 1).getMoves(board).end();
 	// VERIFY
 	assert(has_move == true);
-}   // TEARDOWN
+	// TEARDOWN
+	board.resetBlank();
+}  

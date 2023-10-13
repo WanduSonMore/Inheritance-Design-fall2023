@@ -1,5 +1,6 @@
 #pragma once
-
+#include "board.h"
+#include "piece.h"
 class kingTest
 {
 public:
