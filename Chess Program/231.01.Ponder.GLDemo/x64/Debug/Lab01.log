@@ -1,180 +1,178 @@
 ﻿  board.cpp
-C:\git\Inheritance Design\True\piece.h(24,26): error C2061: syntax error: identifier 'Board'
-C:\git\Inheritance Design\True\board.cpp(78,20): error C2039: 'getMoves': is not a member of 'Board'
-C:\git\Inheritance Design\True\board.h(5,7): message : see declaration of 'Board'
-  move.cpp
-C:\git\Inheritance Design\True\board.h(8,7): error C2143: syntax error: missing ';' before '*'
-C:\git\Inheritance Design\True\board.h(8,7): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
-C:\git\Inheritance Design\True\board.h(8,20): error C2238: unexpected token(s) preceding ';'
-C:\git\Inheritance Design\True\board.h(12,13): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
-C:\git\Inheritance Design\True\board.h(12,13): error C2143: syntax error: missing ';' before '&'
-C:\git\Inheritance Design\True\board.h(12,52): error C2238: unexpected token(s) preceding ';'
-C:\git\Inheritance Design\True\board.h(14,30): error C2061: syntax error: identifier 'Piece'
-C:\git\Inheritance Design\True\board.h(15,8): error C3646: 'getPiece': unknown override specifier
-C:\git\Inheritance Design\True\board.h(15,16): error C2059: syntax error: '('
-C:\git\Inheritance Design\True\board.h(15,30): error C2238: unexpected token(s) preceding ';'
-C:\git\Inheritance Design\True\move.cpp(36,24): error C2676: binary '[': 'const Board' does not define this operator or a conversion to a type acceptable to the predefined operator
-C:\git\Inheritance Design\True\move.cpp(39,26): error C2676: binary '[': 'const Board' does not define this operator or a conversion to a type acceptable to the predefined operator
-C:\git\Inheritance Design\True\move.cpp(42,40): error C2676: binary '[': 'const Board' does not define this operator or a conversion to a type acceptable to the predefined operator
-  piece.cpp
-C:\git\Inheritance Design\True\board.h(8,7): error C2143: syntax error: missing ';' before '*'
-C:\git\Inheritance Design\True\board.h(8,7): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
-C:\git\Inheritance Design\True\board.h(8,20): error C2238: unexpected token(s) preceding ';'
-C:\git\Inheritance Design\True\board.h(12,13): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
-C:\git\Inheritance Design\True\board.h(12,13): error C2143: syntax error: missing ';' before '&'
-C:\git\Inheritance Design\True\board.h(12,52): error C2238: unexpected token(s) preceding ';'
-C:\git\Inheritance Design\True\board.h(14,30): error C2061: syntax error: identifier 'Piece'
-C:\git\Inheritance Design\True\board.h(15,8): error C3646: 'getPiece': unknown override specifier
-C:\git\Inheritance Design\True\board.h(15,16): error C2059: syntax error: '('
-C:\git\Inheritance Design\True\board.h(15,30): error C2238: unexpected token(s) preceding ';'
-  testKing.cpp
-C:\git\Inheritance Design\True\piece.h(24,26): error C2061: syntax error: identifier 'Board'
-C:\git\Inheritance Design\True\testKing.cpp(26,12): error C2676: binary '[': 'const Piece' does not define this operator or a conversion to a type acceptable to the predefined operator
-C:\git\Inheritance Design\True\testKing.cpp(28,27): error C2676: binary '[': 'const Piece' does not define this operator or a conversion to a type acceptable to the predefined operator
-C:\git\Inheritance Design\True\testKing.cpp(29,29): error C2676: binary '[': 'const Piece' does not define this operator or a conversion to a type acceptable to the predefined operator
-C:\git\Inheritance Design\True\testKing.cpp(30,29): error C2676: binary '[': 'const Piece' does not define this operator or a conversion to a type acceptable to the predefined operator
-C:\git\Inheritance Design\True\testKing.cpp(31,29): error C2676: binary '[': 'const Piece' does not define this operator or a conversion to a type acceptable to the predefined operator
-C:\git\Inheritance Design\True\testKing.cpp(32,29): error C2676: binary '[': 'const Piece' does not define this operator or a conversion to a type acceptable to the predefined operator
-C:\git\Inheritance Design\True\testKing.cpp(33,29): error C2676: binary '[': 'const Piece' does not define this operator or a conversion to a type acceptable to the predefined operator
-C:\git\Inheritance Design\True\testKing.cpp(34,29): error C2676: binary '[': 'const Piece' does not define this operator or a conversion to a type acceptable to the predefined operator
-C:\git\Inheritance Design\True\testKing.cpp(35,29): error C2676: binary '[': 'const Piece' does not define this operator or a conversion to a type acceptable to the predefined operator
-C:\git\Inheritance Design\True\testKing.cpp(36,29): error C2676: binary '[': 'const Piece' does not define this operator or a conversion to a type acceptable to the predefined operator
-C:\git\Inheritance Design\True\testKing.cpp(38,2): warning C4806: '==': unsafe operation: no value of type 'bool' promoted to type 'int' can equal the given constant
-C:\git\Inheritance Design\True\testKing.cpp(48,7): error C2662: 'void Board::resetBlank(void)': cannot convert 'this' pointer from 'const Board' to 'Board &'
-C:\git\Inheritance Design\True\testKing.cpp(48,2): message : Conversion loses qualifiers
-C:\git\Inheritance Design\True\board.h(17,7): message : see declaration of 'Board::resetBlank'
-C:\git\Inheritance Design\True\testKing.cpp(48,7): message : while trying to match the argument list '()'
-C:\git\Inheritance Design\True\testKing.cpp(55,12): error C2676: binary '[': 'const Piece' does not define this operator or a conversion to a type acceptable to the predefined operator
-C:\git\Inheritance Design\True\testKing.cpp(57,12): error C2676: binary '[': 'const Piece' does not define this operator or a conversion to a type acceptable to the predefined operator
-C:\git\Inheritance Design\True\testKing.cpp(58,12): error C2676: binary '[': 'const Piece' does not define this operator or a conversion to a type acceptable to the predefined operator
-C:\git\Inheritance Design\True\testKing.cpp(59,12): error C2676: binary '[': 'const Piece' does not define this operator or a conversion to a type acceptable to the predefined operator
-C:\git\Inheritance Design\True\testKing.cpp(60,12): error C2676: binary '[': 'const Piece' does not define this operator or a conversion to a type acceptable to the predefined operator
-C:\git\Inheritance Design\True\testKing.cpp(61,12): error C2676: binary '[': 'const Piece' does not define this operator or a conversion to a type acceptable to the predefined operator
-C:\git\Inheritance Design\True\testKing.cpp(62,12): error C2676: binary '[': 'const Piece' does not define this operator or a conversion to a type acceptable to the predefined operator
-C:\git\Inheritance Design\True\testKing.cpp(63,12): error C2676: binary '[': 'const Piece' does not define this operator or a conversion to a type acceptable to the predefined operator
-C:\git\Inheritance Design\True\testKing.cpp(64,12): error C2676: binary '[': 'const Piece' does not define this operator or a conversion to a type acceptable to the predefined operator
-C:\git\Inheritance Design\True\testKing.cpp(66,29): error C2676: binary '[': 'const Piece' does not define this operator or a conversion to a type acceptable to the predefined operator
-C:\git\Inheritance Design\True\testKing.cpp(70,7): error C2662: 'void Board::resetBlank(void)': cannot convert 'this' pointer from 'const Board' to 'Board &'
-C:\git\Inheritance Design\True\testKing.cpp(70,2): message : Conversion loses qualifiers
-C:\git\Inheritance Design\True\board.h(17,7): message : see declaration of 'Board::resetBlank'
-C:\git\Inheritance Design\True\testKing.cpp(70,7): message : while trying to match the argument list '()'
-C:\git\Inheritance Design\True\testKing.cpp(77,12): error C2676: binary '[': 'const Piece' does not define this operator or a conversion to a type acceptable to the predefined operator
-C:\git\Inheritance Design\True\testKing.cpp(79,12): error C2676: binary '[': 'const Piece' does not define this operator or a conversion to a type acceptable to the predefined operator
-C:\git\Inheritance Design\True\testKing.cpp(80,12): error C2676: binary '[': 'const Piece' does not define this operator or a conversion to a type acceptable to the predefined operator
-C:\git\Inheritance Design\True\testKing.cpp(81,12): error C2676: binary '[': 'const Piece' does not define this operator or a conversion to a type acceptable to the predefined operator
-C:\git\Inheritance Design\True\testKing.cpp(82,12): error C2676: binary '[': 'const Piece' does not define this operator or a conversion to a type acceptable to the predefined operator
-C:\git\Inheritance Design\True\testKing.cpp(83,12): error C2676: binary '[': 'const Piece' does not define this operator or a conversion to a type acceptable to the predefined operator
-C:\git\Inheritance Design\True\testKing.cpp(84,12): error C2676: binary '[': 'const Piece' does not define this operator or a conversion to a type acceptable to the predefined operator
-C:\git\Inheritance Design\True\testKing.cpp(85,12): error C2676: binary '[': 'const Piece' does not define this operator or a conversion to a type acceptable to the predefined operator
-C:\git\Inheritance Design\True\testKing.cpp(86,12): error C2676: binary '[': 'const Piece' does not define this operator or a conversion to a type acceptable to the predefined operator
-C:\git\Inheritance Design\True\testKing.cpp(88,27): error C2676: binary '[': 'const Piece' does not define this operator or a conversion to a type acceptable to the predefined operator
-C:\git\Inheritance Design\True\testKing.cpp(89,29): error C2676: binary '[': 'const Piece' does not define this operator or a conversion to a type acceptable to the predefined operator
-C:\git\Inheritance Design\True\testKing.cpp(89,56): error C2015: too many characters in constant
-C:\git\Inheritance Design\True\testKing.cpp(90,29): error C2676: binary '[': 'const Piece' does not define this operator or a conversion to a type acceptable to the predefined operator
-C:\git\Inheritance Design\True\testKing.cpp(90,56): error C2015: too many characters in constant
-C:\git\Inheritance Design\True\testKing.cpp(91,29): error C2676: binary '[': 'const Piece' does not define this operator or a conversion to a type acceptable to the predefined operator
-C:\git\Inheritance Design\True\testKing.cpp(91,56): error C2015: too many characters in constant
-C:\git\Inheritance Design\True\testKing.cpp(92,29): error C2676: binary '[': 'const Piece' does not define this operator or a conversion to a type acceptable to the predefined operator
-C:\git\Inheritance Design\True\testKing.cpp(92,56): error C2015: too many characters in constant
-C:\git\Inheritance Design\True\testKing.cpp(93,29): error C2676: binary '[': 'const Piece' does not define this operator or a conversion to a type acceptable to the predefined operator
-C:\git\Inheritance Design\True\testKing.cpp(93,56): error C2015: too many characters in constant
-C:\git\Inheritance Design\True\testKing.cpp(94,29): error C2676: binary '[': 'const Piece' does not define this operator or a conversion to a type acceptable to the predefined operator
-C:\git\Inheritance Design\True\testKing.cpp(94,56): error C2015: too many characters in constant
-C:\git\Inheritance Design\True\testKing.cpp(95,29): error C2676: binary '[': 'const Piece' does not define this operator or a conversion to a type acceptable to the predefined operator
-C:\git\Inheritance Design\True\testKing.cpp(95,56): error C2015: too many characters in constant
-C:\git\Inheritance Design\True\testKing.cpp(96,29): error C2676: binary '[': 'const Piece' does not define this operator or a conversion to a type acceptable to the predefined operator
-C:\git\Inheritance Design\True\testKing.cpp(96,56): error C2015: too many characters in constant
-C:\git\Inheritance Design\True\testKing.cpp(98,2): warning C4806: '==': unsafe operation: no value of type 'bool' promoted to type 'int' can equal the given constant
-C:\git\Inheritance Design\True\testKing.cpp(108,7): error C2662: 'void Board::resetBlank(void)': cannot convert 'this' pointer from 'const Board' to 'Board &'
-C:\git\Inheritance Design\True\testKing.cpp(108,2): message : Conversion loses qualifiers
-C:\git\Inheritance Design\True\board.h(17,7): message : see declaration of 'Board::resetBlank'
-C:\git\Inheritance Design\True\testKing.cpp(108,7): message : while trying to match the argument list '()'
-C:\git\Inheritance Design\True\testKing.cpp(115,12): error C2676: binary '[': 'const Piece' does not define this operator or a conversion to a type acceptable to the predefined operator
-C:\git\Inheritance Design\True\testKing.cpp(116,12): error C2676: binary '[': 'const Piece' does not define this operator or a conversion to a type acceptable to the predefined operator
-C:\git\Inheritance Design\True\testKing.cpp(118,12): error C2676: binary '[': 'const Piece' does not define this operator or a conversion to a type acceptable to the predefined operator
-C:\git\Inheritance Design\True\testKing.cpp(120,12): error C2676: binary '[': 'const Piece' does not define this operator or a conversion to a type acceptable to the predefined operator
-C:\git\Inheritance Design\True\testKing.cpp(122,12): error C2676: binary '[': 'const Piece' does not define this operator or a conversion to a type acceptable to the predefined operator
-C:\git\Inheritance Design\True\testKing.cpp(124,12): error C2676: binary '[': 'const Piece' does not define this operator or a conversion to a type acceptable to the predefined operator
-C:\git\Inheritance Design\True\testKing.cpp(126,12): error C2676: binary '[': 'const Piece' does not define this operator or a conversion to a type acceptable to the predefined operator
-C:\git\Inheritance Design\True\testKing.cpp(128,27): error C2676: binary '[': 'const Piece' does not define this operator or a conversion to a type acceptable to the predefined operator
-C:\git\Inheritance Design\True\testKing.cpp(129,29): error C2676: binary '[': 'const Piece' does not define this operator or a conversion to a type acceptable to the predefined operator
-C:\git\Inheritance Design\True\testKing.cpp(130,29): error C2676: binary '[': 'const Piece' does not define this operator or a conversion to a type acceptable to the predefined operator
-C:\git\Inheritance Design\True\testKing.cpp(132,2): warning C4806: '==': unsafe operation: no value of type 'bool' promoted to type 'int' can equal the given constant
-C:\git\Inheritance Design\True\testKing.cpp(136,7): error C2662: 'void Board::resetBlank(void)': cannot convert 'this' pointer from 'const Board' to 'Board &'
-C:\git\Inheritance Design\True\testKing.cpp(136,2): message : Conversion loses qualifiers
-C:\git\Inheritance Design\True\board.h(17,7): message : see declaration of 'Board::resetBlank'
-C:\git\Inheritance Design\True\testKing.cpp(136,7): message : while trying to match the argument list '()'
-C:\git\Inheritance Design\True\testKing.cpp(143,12): error C2676: binary '[': 'const Piece' does not define this operator or a conversion to a type acceptable to the predefined operator
-C:\git\Inheritance Design\True\testKing.cpp(145,12): error C2676: binary '[': 'const Piece' does not define this operator or a conversion to a type acceptable to the predefined operator
-C:\git\Inheritance Design\True\testKing.cpp(147,12): error C2676: binary '[': 'const Piece' does not define this operator or a conversion to a type acceptable to the predefined operator
-C:\git\Inheritance Design\True\testKing.cpp(149,12): error C2676: binary '[': 'const Piece' does not define this operator or a conversion to a type acceptable to the predefined operator
-C:\git\Inheritance Design\True\testKing.cpp(151,12): error C2676: binary '[': 'const Piece' does not define this operator or a conversion to a type acceptable to the predefined operator
-C:\git\Inheritance Design\True\testKing.cpp(152,12): error C2676: binary '[': 'const Piece' does not define this operator or a conversion to a type acceptable to the predefined operator
-C:\git\Inheritance Design\True\testKing.cpp(154,12): error C2676: binary '[': 'const Piece' does not define this operator or a conversion to a type acceptable to the predefined operator
-C:\git\Inheritance Design\True\testKing.cpp(155,12): error C2676: binary '[': 'const Piece' does not define this operator or a conversion to a type acceptable to the predefined operator
-C:\git\Inheritance Design\True\testKing.cpp(157,27): error C2676: binary '[': 'const Piece' does not define this operator or a conversion to a type acceptable to the predefined operator
-C:\git\Inheritance Design\True\testKing.cpp(158,29): error C2676: binary '[': 'const Piece' does not define this operator or a conversion to a type acceptable to the predefined operator
-C:\git\Inheritance Design\True\testKing.cpp(159,29): error C2676: binary '[': 'const Piece' does not define this operator or a conversion to a type acceptable to the predefined operator
-C:\git\Inheritance Design\True\testKing.cpp(161,2): warning C4806: '==': unsafe operation: no value of type 'bool' promoted to type 'int' can equal the given constant
-C:\git\Inheritance Design\True\testKing.cpp(165,7): error C2662: 'void Board::resetBlank(void)': cannot convert 'this' pointer from 'const Board' to 'Board &'
-C:\git\Inheritance Design\True\testKing.cpp(165,2): message : Conversion loses qualifiers
-C:\git\Inheritance Design\True\board.h(17,7): message : see declaration of 'Board::resetBlank'
-C:\git\Inheritance Design\True\testKing.cpp(165,7): message : while trying to match the argument list '()'
-C:\git\Inheritance Design\True\testKing.cpp(172,12): error C2676: binary '[': 'const Piece' does not define this operator or a conversion to a type acceptable to the predefined operator
-C:\git\Inheritance Design\True\testKing.cpp(174,12): error C2676: binary '[': 'const Piece' does not define this operator or a conversion to a type acceptable to the predefined operator
-C:\git\Inheritance Design\True\testKing.cpp(176,12): error C2676: binary '[': 'const Piece' does not define this operator or a conversion to a type acceptable to the predefined operator
-C:\git\Inheritance Design\True\testKing.cpp(178,12): error C2676: binary '[': 'const Piece' does not define this operator or a conversion to a type acceptable to the predefined operator
-C:\git\Inheritance Design\True\testKing.cpp(180,12): error C2676: binary '[': 'const Piece' does not define this operator or a conversion to a type acceptable to the predefined operator
-C:\git\Inheritance Design\True\testKing.cpp(182,12): error C2676: binary '[': 'const Piece' does not define this operator or a conversion to a type acceptable to the predefined operator
-C:\git\Inheritance Design\True\testKing.cpp(184,12): error C2676: binary '[': 'const Piece' does not define this operator or a conversion to a type acceptable to the predefined operator
-C:\git\Inheritance Design\True\testKing.cpp(186,12): error C2676: binary '[': 'const Piece' does not define this operator or a conversion to a type acceptable to the predefined operator
-C:\git\Inheritance Design\True\testKing.cpp(188,27): error C2676: binary '[': 'const Piece' does not define this operator or a conversion to a type acceptable to the predefined operator
-C:\git\Inheritance Design\True\testKing.cpp(189,29): error C2676: binary '[': 'const Piece' does not define this operator or a conversion to a type acceptable to the predefined operator
-C:\git\Inheritance Design\True\testKing.cpp(190,29): error C2676: binary '[': 'const Piece' does not define this operator or a conversion to a type acceptable to the predefined operator
-C:\git\Inheritance Design\True\testKing.cpp(192,2): warning C4806: '==': unsafe operation: no value of type 'bool' promoted to type 'int' can equal the given constant
-C:\git\Inheritance Design\True\testKing.cpp(196,7): error C2662: 'void Board::resetBlank(void)': cannot convert 'this' pointer from 'const Board' to 'Board &'
-C:\git\Inheritance Design\True\testKing.cpp(196,2): message : Conversion loses qualifiers
-C:\git\Inheritance Design\True\board.h(17,7): message : see declaration of 'Board::resetBlank'
-C:\git\Inheritance Design\True\testKing.cpp(196,7): message : while trying to match the argument list '()'
-C:\git\Inheritance Design\True\testKing.cpp(203,12): error C2676: binary '[': 'const Piece' does not define this operator or a conversion to a type acceptable to the predefined operator
-C:\git\Inheritance Design\True\testKing.cpp(205,12): error C2676: binary '[': 'const Piece' does not define this operator or a conversion to a type acceptable to the predefined operator
-C:\git\Inheritance Design\True\testKing.cpp(207,12): error C2676: binary '[': 'const Piece' does not define this operator or a conversion to a type acceptable to the predefined operator
-C:\git\Inheritance Design\True\testKing.cpp(209,12): error C2676: binary '[': 'const Piece' does not define this operator or a conversion to a type acceptable to the predefined operator
-C:\git\Inheritance Design\True\testKing.cpp(211,12): error C2676: binary '[': 'const Piece' does not define this operator or a conversion to a type acceptable to the predefined operator
-C:\git\Inheritance Design\True\testKing.cpp(213,12): error C2676: binary '[': 'const Piece' does not define this operator or a conversion to a type acceptable to the predefined operator
-C:\git\Inheritance Design\True\testKing.cpp(215,27): error C2676: binary '[': 'const Piece' does not define this operator or a conversion to a type acceptable to the predefined operator
-C:\git\Inheritance Design\True\testKing.cpp(216,29): error C2676: binary '[': 'const Piece' does not define this operator or a conversion to a type acceptable to the predefined operator
-C:\git\Inheritance Design\True\testKing.cpp(217,29): error C2676: binary '[': 'const Piece' does not define this operator or a conversion to a type acceptable to the predefined operator
-C:\git\Inheritance Design\True\testKing.cpp(218,29): error C2676: binary '[': 'const Piece' does not define this operator or a conversion to a type acceptable to the predefined operator
-C:\git\Inheritance Design\True\testKing.cpp(218,56): error C2015: too many characters in constant
-C:\git\Inheritance Design\True\testKing.cpp(219,29): error C2676: binary '[': 'const Piece' does not define this operator or a conversion to a type acceptable to the predefined operator
-C:\git\Inheritance Design\True\testKing.cpp(219,56): error C2015: too many characters in constant
-C:\git\Inheritance Design\True\testKing.cpp(221,2): warning C4806: '==': unsafe operation: no value of type 'bool' promoted to type 'int' can equal the given constant
-C:\git\Inheritance Design\True\testKing.cpp(227,7): error C2662: 'void Board::resetBlank(void)': cannot convert 'this' pointer from 'const Board' to 'Board &'
-C:\git\Inheritance Design\True\testKing.cpp(227,2): message : Conversion loses qualifiers
-C:\git\Inheritance Design\True\board.h(17,7): message : see declaration of 'Board::resetBlank'
-C:\git\Inheritance Design\True\testKing.cpp(227,7): message : while trying to match the argument list '()'
-  testPawn.cpp
-C:\git\Inheritance Design\True\piece.h(24,26): error C2061: syntax error: identifier 'Board'
-C:\git\Inheritance Design\True\testPawn.cpp(29,38): error C2660: 'Piece::getMoves': function does not take 1 arguments
-C:\git\Inheritance Design\True\piece.h(24,17): message : see declaration of 'Piece::getMoves'
-C:\git\Inheritance Design\True\testPawn.cpp(29,38): message : while trying to match the argument list '(Board)'
-C:\git\Inheritance Design\True\testPawn.cpp(44,29): error C2660: 'Piece::getMoves': function does not take 1 arguments
-C:\git\Inheritance Design\True\piece.h(24,17): message : see declaration of 'Piece::getMoves'
-C:\git\Inheritance Design\True\testPawn.cpp(44,29): message : while trying to match the argument list '(Board)'
-C:\git\Inheritance Design\True\testPawn.cpp(58,29): error C2660: 'Piece::getMoves': function does not take 1 arguments
-C:\git\Inheritance Design\True\piece.h(24,17): message : see declaration of 'Piece::getMoves'
-C:\git\Inheritance Design\True\testPawn.cpp(58,29): message : while trying to match the argument list '(Board)'
-C:\git\Inheritance Design\True\testPawn.cpp(77,29): error C2660: 'Piece::getMoves': function does not take 1 arguments
-C:\git\Inheritance Design\True\piece.h(24,17): message : see declaration of 'Piece::getMoves'
-C:\git\Inheritance Design\True\testPawn.cpp(77,29): message : while trying to match the argument list '(Board)'
-C:\git\Inheritance Design\True\testPawn.cpp(99,29): error C2660: 'Piece::getMoves': function does not take 1 arguments
-C:\git\Inheritance Design\True\piece.h(24,17): message : see declaration of 'Piece::getMoves'
-C:\git\Inheritance Design\True\testPawn.cpp(99,29): message : while trying to match the argument list '(Board)'
-C:\git\Inheritance Design\True\testPawn.cpp(113,38): error C2660: 'Piece::getMoves': function does not take 1 arguments
-C:\git\Inheritance Design\True\piece.h(24,17): message : see declaration of 'Piece::getMoves'
-C:\git\Inheritance Design\True\testPawn.cpp(113,38): message : while trying to match the argument list '(Board)'
-C:\git\Inheritance Design\True\testPawn.cpp(113,92): error C2660: 'Piece::getMoves': function does not take 1 arguments
-C:\git\Inheritance Design\True\piece.h(24,17): message : see declaration of 'Piece::getMoves'
-C:\git\Inheritance Design\True\testPawn.cpp(113,92): message : while trying to match the argument list '(Board)'
-  Generating Code...
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22000.0\um\wincrypt.h(380,29): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22000.0\um\wincrypt.h(380,19): error C2146: syntax error: missing ';' before identifier 'HCRYPTPROV'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22000.0\um\wincrypt.h(899,17): error C3646: 'dwVersion': unknown override specifier
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22000.0\um\wincrypt.h(899,26): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22000.0\um\wincrypt.h(901,13): error C2143: syntax error: missing ';' before '*'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22000.0\um\wincrypt.h(901,13): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22000.0\um\wincrypt.h(901,19): error C2238: unexpected token(s) preceding ';'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22000.0\um\wincrypt.h(902,13): error C3646: 'cbOID': unknown override specifier
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22000.0\um\wincrypt.h(902,18): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22000.0\um\wincrypt.h(908,13): error C2143: syntax error: missing ';' before '*'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22000.0\um\wincrypt.h(908,13): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22000.0\um\wincrypt.h(908,27): error C2238: unexpected token(s) preceding ';'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22000.0\um\wincrypt.h(909,13): error C3646: 'cbInnerString': unknown override specifier
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22000.0\um\wincrypt.h(909,26): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22000.0\um\wincrypt.h(910,13): error C2143: syntax error: missing ';' before '*'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22000.0\um\wincrypt.h(910,13): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22000.0\um\wincrypt.h(910,27): error C2238: unexpected token(s) preceding ';'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22000.0\um\wincrypt.h(911,13): error C3646: 'cbOuterString': unknown override specifier
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22000.0\um\wincrypt.h(911,26): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22000.0\um\wincrypt.h(916,13): error C3646: 'dwUse': unknown override specifier
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22000.0\um\wincrypt.h(916,18): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22000.0\um\wincrypt.h(918,13): error C3646: 'cBits': unknown override specifier
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22000.0\um\wincrypt.h(918,18): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22000.0\um\wincrypt.h(919,13): error C3646: 'dwFlags': unknown override specifier
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22000.0\um\wincrypt.h(919,20): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22000.0\um\wincrypt.h(920,13): error C3646: 'dwReserved': unknown override specifier
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22000.0\um\wincrypt.h(920,23): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22000.0\um\wincrypt.h(932,15): error C3646: 'dwBitLen': unknown override specifier
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22000.0\um\wincrypt.h(932,23): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22000.0\um\wincrypt.h(933,15): error C3646: 'dwNameLen': unknown override specifier
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22000.0\um\wincrypt.h(933,24): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22000.0\um\wincrypt.h(934,15): error C3646: 'szName': unknown override specifier
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22000.0\um\wincrypt.h(934,21): error C2143: syntax error: missing ',' before '['
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22000.0\um\wincrypt.h(934,25): error C2238: unexpected token(s) preceding ';'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22000.0\um\wincrypt.h(940,15): error C3646: 'dwDefaultLen': unknown override specifier
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22000.0\um\wincrypt.h(940,27): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22000.0\um\wincrypt.h(941,15): error C3646: 'dwMinLen': unknown override specifier
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22000.0\um\wincrypt.h(941,23): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22000.0\um\wincrypt.h(942,15): error C3646: 'dwMaxLen': unknown override specifier
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22000.0\um\wincrypt.h(942,23): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22000.0\um\wincrypt.h(943,15): error C3646: 'dwProtocols': unknown override specifier
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22000.0\um\wincrypt.h(943,26): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22000.0\um\wincrypt.h(944,15): error C3646: 'dwNameLen': unknown override specifier
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22000.0\um\wincrypt.h(944,24): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22000.0\um\wincrypt.h(945,15): error C3646: 'szName': unknown override specifier
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22000.0\um\wincrypt.h(945,21): error C2143: syntax error: missing ',' before '['
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22000.0\um\wincrypt.h(945,25): error C2238: unexpected token(s) preceding ';'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22000.0\um\wincrypt.h(946,15): error C3646: 'dwLongNameLen': unknown override specifier
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22000.0\um\wincrypt.h(946,28): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22000.0\um\wincrypt.h(947,15): error C3646: 'szLongName': unknown override specifier
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22000.0\um\wincrypt.h(947,25): error C2143: syntax error: missing ',' before '['
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22000.0\um\wincrypt.h(947,29): error C2238: unexpected token(s) preceding ';'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22000.0\um\wincrypt.h(952,17): error C3646: 'bType': unknown override specifier
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22000.0\um\wincrypt.h(952,22): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22000.0\um\wincrypt.h(953,17): error C3646: 'bVersion': unknown override specifier
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22000.0\um\wincrypt.h(953,25): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22000.0\um\wincrypt.h(954,17): error C3646: 'reserved': unknown override specifier
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22000.0\um\wincrypt.h(954,25): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22000.0\um\wincrypt.h(959,17): error C3646: 'magic': unknown override specifier
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22000.0\um\wincrypt.h(959,22): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22000.0\um\wincrypt.h(960,17): error C3646: 'bitlen': unknown override specifier
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22000.0\um\wincrypt.h(960,23): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22000.0\um\wincrypt.h(961,17): error C3646: 'pubexp': unknown override specifier
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22000.0\um\wincrypt.h(961,23): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22000.0\um\wincrypt.h(966,17): error C3646: 'magic': unknown override specifier
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22000.0\um\wincrypt.h(966,22): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22000.0\um\wincrypt.h(967,17): error C3646: 'bitlen': unknown override specifier
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22000.0\um\wincrypt.h(967,23): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22000.0\um\wincrypt.h(971,17): error C3646: 'counter': unknown override specifier
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22000.0\um\wincrypt.h(971,24): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22000.0\um\wincrypt.h(972,17): error C3646: 'seed': unknown override specifier
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22000.0\um\wincrypt.h(972,21): error C2143: syntax error: missing ',' before '['
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22000.0\um\wincrypt.h(972,25): error C2238: unexpected token(s) preceding ';'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22000.0\um\wincrypt.h(976,17): error C3646: 'magic': unknown override specifier
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22000.0\um\wincrypt.h(976,22): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22000.0\um\wincrypt.h(977,17): error C3646: 'bitlenP': unknown override specifier
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22000.0\um\wincrypt.h(977,24): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22000.0\um\wincrypt.h(978,17): error C3646: 'bitlenQ': unknown override specifier
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22000.0\um\wincrypt.h(978,24): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22000.0\um\wincrypt.h(979,17): error C3646: 'bitlenJ': unknown override specifier
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22000.0\um\wincrypt.h(979,24): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22000.0\um\wincrypt.h(984,17): error C3646: 'magic': unknown override specifier
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22000.0\um\wincrypt.h(984,22): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22000.0\um\wincrypt.h(985,17): error C3646: 'bitlenP': unknown override specifier
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22000.0\um\wincrypt.h(985,24): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22000.0\um\wincrypt.h(986,17): error C3646: 'bitlenQ': unknown override specifier
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22000.0\um\wincrypt.h(986,24): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22000.0\um\wincrypt.h(987,17): error C3646: 'bitlenJ': unknown override specifier
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22000.0\um\wincrypt.h(987,24): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22000.0\um\wincrypt.h(988,17): error C3646: 'bitlenX': unknown override specifier
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22000.0\um\wincrypt.h(988,24): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22000.0\um\wincrypt.h(993,17): error C3646: 'dwKeySpec': unknown override specifier
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22000.0\um\wincrypt.h(993,26): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22000.0\um\wincrypt.h(994,17): error C3646: 'Type': unknown override specifier
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22000.0\um\wincrypt.h(994,21): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22000.0\um\wincrypt.h(995,17): error C3646: 'Subtype': unknown override specifier
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22000.0\um\wincrypt.h(995,24): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22000.0\um\wincrypt.h(1050,37): error C3646: 'cbData': unknown override specifier
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22000.0\um\wincrypt.h(1050,43): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22000.0\um\wincrypt.h(1051,41): error C2143: syntax error: missing ';' before '*'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22000.0\um\wincrypt.h(1051,41): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22000.0\um\wincrypt.h(1051,48): error C2238: unexpected token(s) preceding ';'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22000.0\um\wincrypt.h(1070,25): error C3646: 'dwVersion': unknown override specifier
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22000.0\um\wincrypt.h(1070,34): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22000.0\um\wincrypt.h(1072,21): error C3646: 'pszContentEncObjId': unknown override specifier
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22000.0\um\wincrypt.h(1072,39): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22000.0\um\wincrypt.h(1085,1): error C2143: syntax error: missing ';' before '__cdecl'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22000.0\um\wincrypt.h(1085,1): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22000.0\um\wincrypt.h(1087,30): error C2065: 'phProv': undeclared identifier
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22000.0\um\wincrypt.h(1088,17): error C2065: 'LPCSTR': undeclared identifier
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22000.0\um\wincrypt.h(1088,27): error C2146: syntax error: missing ')' before identifier 'szContainer'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22000.0\um\wincrypt.h(1095,1): error C2143: syntax error: missing ';' before '__cdecl'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22000.0\um\wincrypt.h(1095,1): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22000.0\um\wincrypt.h(1094,1): error C2086: 'int BOOL': redefinition
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22000.0\um\wincrypt.h(1084,1): message : see declaration of 'BOOL'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22000.0\um\wincrypt.h(1097,30): error C2065: 'phProv': undeclared identifier
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22000.0\um\wincrypt.h(1098,17): error C2065: 'LPCWSTR': undeclared identifier
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22000.0\um\wincrypt.h(1098,28): error C2146: syntax error: missing ')' before identifier 'szContainer'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22000.0\um\wincrypt.h(1117,1): error C2143: syntax error: missing ';' before '__cdecl'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22000.0\um\wincrypt.h(1117,1): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22000.0\um\wincrypt.h(1116,1): error C2086: 'int BOOL': redefinition
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22000.0\um\wincrypt.h(1084,1): message : see declaration of 'BOOL'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22000.0\um\wincrypt.h(1119,25): error C2146: syntax error: missing ')' before identifier 'hProv'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22000.0\um\wincrypt.h(1131,1): error C2143: syntax error: missing ';' before '__cdecl'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22000.0\um\wincrypt.h(1131,1): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22000.0\um\wincrypt.h(1130,1): error C2086: 'int BOOL': redefinition
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22000.0\um\wincrypt.h(1084,1): message : see declaration of 'BOOL'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22000.0\um\wincrypt.h(1133,25): error C2146: syntax error: missing ')' before identifier 'hProv'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22000.0\um\wincrypt.h(1141,1): error C2143: syntax error: missing ';' before '__cdecl'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22000.0\um\wincrypt.h(1141,1): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22000.0\um\wincrypt.h(1140,1): error C2086: 'int BOOL': redefinition
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22000.0\um\wincrypt.h(1084,1): message : see declaration of 'BOOL'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22000.0\um\wincrypt.h(1143,25): error C2146: syntax error: missing ')' before identifier 'hProv'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22000.0\um\wincrypt.h(1152,1): error C2143: syntax error: missing ';' before '__cdecl'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22000.0\um\wincrypt.h(1152,1): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22000.0\um\wincrypt.h(1151,1): error C2086: 'int BOOL': redefinition
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22000.0\um\wincrypt.h(1084,1): message : see declaration of 'BOOL'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22000.0\um\wincrypt.h(1154,6): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22000.0\um\wincrypt.h(1159,1): error C2143: syntax error: missing ';' before '__cdecl'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22000.0\um\wincrypt.h(1159,1): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22000.0\um\wincrypt.h(1158,1): error C2086: 'int BOOL': redefinition
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22000.0\um\wincrypt.h(1084,1): message : see declaration of 'BOOL'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22000.0\um\wincrypt.h(1162,13): error C2061: syntax error: identifier 'DWORD'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22000.0\um\wincrypt.h(1165,6): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22000.0\um\wincrypt.h(1169,1): error C2143: syntax error: missing ';' before '__cdecl'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22000.0\um\wincrypt.h(1169,1): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22000.0\um\wincrypt.h(1168,1): error C2086: 'int BOOL': redefinition
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22000.0\um\wincrypt.h(1084,1): message : see declaration of 'BOOL'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22000.0\um\wincrypt.h(1172,53): error C2061: syntax error: identifier 'DWORD'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22000.0\um\wincrypt.h(1176,6): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22000.0\um\wincrypt.h(1180,1): error C2143: syntax error: missing ';' before '__cdecl'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22000.0\um\wincrypt.h(1180,1): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22000.0\um\wincrypt.h(1179,1): error C2086: 'int BOOL': redefinition
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22000.0\um\wincrypt.h(1084,1): message : see declaration of 'BOOL'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22000.0\um\wincrypt.h(1183,13): error C2061: syntax error: identifier 'DWORD'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22000.0\um\wincrypt.h(1186,6): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22000.0\um\wincrypt.h(1190,1): error C2143: syntax error: missing ';' before '__cdecl'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22000.0\um\wincrypt.h(1190,1): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22000.0\um\wincrypt.h(1189,1): error C2086: 'int BOOL': redefinition
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22000.0\um\wincrypt.h(1084,1): message : see declaration of 'BOOL'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22000.0\um\wincrypt.h(1193,49): error C2061: syntax error: identifier 'DWORD'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22000.0\um\wincrypt.h(1197,6): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22000.0\um\wincrypt.h(1201,1): error C2143: syntax error: missing ';' before '__cdecl'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22000.0\um\wincrypt.h(1201,1): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22000.0\um\wincrypt.h(1200,1): error C2086: 'int BOOL': redefinition
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22000.0\um\wincrypt.h(1084,1): message : see declaration of 'BOOL'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22000.0\um\wincrypt.h(1203,25): error C2146: syntax error: missing ')' before identifier 'hProv'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22000.0\um\wincrypt.h(1211,1): error C2143: syntax error: missing ';' before '__cdecl'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22000.0\um\wincrypt.h(1211,1): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22000.0\um\wincrypt.h(1210,1): error C2086: 'int BOOL': redefinition
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22000.0\um\wincrypt.h(1084,1): message : see declaration of 'BOOL'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22000.0\um\wincrypt.h(1213,65): error C2146: syntax error: missing ')' before identifier 'hProv'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22000.0\um\wincrypt.h(1222,1): error C2143: syntax error: missing ';' before '__cdecl'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22000.0\um\wincrypt.h(1222,1): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22000.0\um\wincrypt.h(1221,1): error C2086: 'int BOOL': redefinition
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22000.0\um\wincrypt.h(1084,1): message : see declaration of 'BOOL'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22000.0\um\wincrypt.h(1222,1): fatal  error C1003: error count exceeds 100; stopping compilation
