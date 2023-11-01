@@ -16,6 +16,7 @@
 #include "uiDraw.h"     // for RANDOM and DRAW*
 #include "position.h"      // for POINT
 #include "satellite.h"
+#include "earth.h"
 using namespace std;
 
 /*************************************************************************
@@ -69,6 +70,8 @@ public:
 
    double angleShip;
    double angleEarth;
+   int timer = 0;
+   int count = 0;
 };
 
 /*************************************
@@ -97,8 +100,14 @@ void callBack(const Interface* pUI, void* p)
       pDemo->ptShip.addPixelsX(-1.0);
    if (pUI->isRight())
       pDemo->ptShip.addPixelsX(1.0);
+   //if (pDemo->timer < 1) {
 
-   pDemo->hubble.setPosition();
+   //}
+   pDemo->timer += 1;
+   //cout << pDemo->timer;
+   //if (pDemo->timer < 1000000)
+   pDemo->hubble.setPositionNew(1);
+
 
 
    //

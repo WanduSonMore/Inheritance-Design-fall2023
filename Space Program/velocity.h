@@ -7,20 +7,24 @@ using namespace std;
 class Velocity
 {
 public:
-	double horizontalAccel() {
+	double horizontalAccel(double angle) {
 		return acceleration * sin(angle);
 	}
-	double verticalAccel() {
+	double verticalAccel(double angle) {
 		return acceleration * cos(angle);
 	}
-	void distanceFormula(Position position) {
-		position.addMetersX(position.getMetersX() + dx * time + (0.5 * horizontalAccel() * pow(time, 2)));
-		position.addMetersY(position.getMetersY() + dx * time + (0.5 * verticalAccel() * pow(time, 2)));
-		speed = speed + velocity * time + (0.5 * acceleration * time * time);
+	double distanceFormulaX(Position position, double angle, int time) {
+		return (position.getMetersX() + dx * time + (0.5 * horizontalAccel(angle) * (time * time )));
 	}
-	void constantAccelCal() {
-		dx = dx + horizontalAccel() * time;
-		dy = dy + verticalAccel() * time;
+	double distanceFormulaY(Position position, double angle, int time) {
+		return (position.getMetersY() + dx * time + (0.5 * verticalAccel(angle) * (time * time)));
+	}
+	void distanceFormulaSpeed(Position position, double angle, int time) {
+		speed = speed + velocity * time + (0.5 * acceleration * (time * time));
+	}
+	void constantAccelCal(double angle, int time) {
+		dx = dx + horizontalAccel(angle) * time;
+		dy = dy + verticalAccel(angle) * time;
 		velocity = velocity + acceleration * time;
 	}
 	void testMove(Position position) {
@@ -30,14 +34,13 @@ public:
 
 	//}
 protected:
-	double velocity;
+	double velocity; //  = random(-3100, 0)
 	double acceleration;
 	double dx;
 	double dy;
-	double angle;
 	//double ddx;
 	//double ddy;
-	double time;
+	//double time;
 	double speed;
 };
 
