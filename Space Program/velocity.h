@@ -7,6 +7,14 @@ using namespace std;
 class Velocity
 {
 public:
+	Velocity() {
+		dx = 0.0;
+		dy = 0.0;
+	}
+	Velocity(double x, double y) {
+		dx = x;
+		dy = y;
+	}
 	double horizontalAccel(double angle) {
 		return acceleration * sin(angle);
 	}
@@ -29,6 +37,16 @@ public:
 	}
 	void testMove(Position position) {
 		
+	}
+	void updateVelocity(double x, double y, int t) {
+		dx = dx + (x * t);
+		dy = dy + (y * t);
+	}
+	double getDx() {
+		return dx;
+	}
+	double getDy() {
+		return dy;
 	}
 	//void calculateVelocity() {
 

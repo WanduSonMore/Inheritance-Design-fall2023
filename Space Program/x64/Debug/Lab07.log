@@ -1,7 +1,6 @@
 ﻿  Lab07.cpp
 C:\git\Inheritance Design\Inheritance-Design-fall2023\Space Program\satellite.h(28,68): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
 C:\git\Inheritance Design\Inheritance-Design-fall2023\Space Program\satellite.h(28,45): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
-  earth.cpp
   satellite.cpp
 C:\git\Inheritance Design\Inheritance-Design-fall2023\Space Program\satellite.h(28,68): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
 C:\git\Inheritance Design\Inheritance-Design-fall2023\Space Program\satellite.h(28,45): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data

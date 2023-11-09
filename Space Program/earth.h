@@ -25,9 +25,10 @@ public:
 		//secondsDay = 60
 		double rotation;
 		rotation = -((2 * pi) / 30) * (td / 60);
+		return rotation;
 	}
 
-	double GetGravityMag(double h)
+	double getGravity(double h)
 	{
 		//Gh = G (r / (r + h))^2
 		//Gh is the magnitude of gravity
@@ -39,7 +40,7 @@ public:
 		return gravityMag;
 	}
 
-	double getHeightAboveEarth(double x, double y)
+	double getAltitude(double x, double y)
 	{
 		double height;
 		double X2;

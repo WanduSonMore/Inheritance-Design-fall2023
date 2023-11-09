@@ -8,9 +8,15 @@
 class Satellite
 {
 public: 
-	//Satellite() {
-	///*	draw();*/
-	//}
+	Satellite(double x, double y, double dx, double dy) {
+		position.setMetersX(x);
+		position.setPixelsX(x);
+		position.setMetersY(y);
+		position.setPixelsY(y);
+		Velocity velocity1(dx, dy);
+		velocity = velocity1;
+	/*	draw();*/
+	}
 	
 	void setPosition(Position ptUpperRight)
 	{
@@ -24,26 +30,11 @@ public:
 	Position getPosition() {
 		return position;
 	}
+	void updatePosition(double x, double y, int t) {
+
+	}
 	void setPositionNew(int timer) {
 		angle = earth.getAngle(position.getMetersX(), position.getMetersY());
-		//cout << angle;
-		/*velocity.testMove(position);*/
-		//if (position.getMetersX()) {
-		//	position.addMetersX(1);
-		//	position.addPixelsX(1);
-		//}
-		//position.addMetersX(1);
-		//position.addPixelsX(1);
-		//position.addMetersY(1);
-		//position.addPixelsY(1);
-		//position.addMetersX(velocity.horizontalAccel(angle));
-		//position.addPixelsX(velocity.horizontalAccel(angle));
-		//position.addMetersY(velocity.verticalAccel(angle));
-		//position.addPixelsY(velocity.verticalAccel(angle));
-		//position.addMetersX(velocity.distanceFormulaX(position, angle, timer));
-		//position.addPixelsX(velocity.distanceFormulaX(position, angle, timer));
-		//position.addMetersY(velocity.distanceFormulaY(position, angle, timer));
-		//position.addPixelsY(velocity.distanceFormulaY(position, angle, timer));
 	}
 	//void rotate(double change) {
 	//	angleShip += change;
@@ -52,7 +43,7 @@ public:
 protected:
 	Position position;
 	Velocity velocity;
-	Earth earth;
+	Earth earth; // remove and move to demo
 	unsigned char phaseStar;
 	double angle = 0;
 	//double angleShip;
