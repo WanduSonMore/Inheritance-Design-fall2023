@@ -25,8 +25,8 @@ void testVelocityUpdate::velocityTestTwo()
    velocity.updateVelocity(0, 0, 0);
    
    //verify
-   assert(velocity.getDx() == 0.0);
-   assert(velocity.getDy() == 0.0);
+   assert(velocity.getDx() == 1.2);
+   assert(velocity.getDy() == 3.4);
    
    //teardown
    //no need, variable velocity is destroyed once function ends
