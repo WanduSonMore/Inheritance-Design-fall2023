@@ -17,6 +17,10 @@
 #include "position.h"      // for POINT
 #include "satellite.h"
 #include "earth.h"
+#include "testCases.h"
+#include "testEarth.h"
+#include "testPositionUpdate.h"
+#include "testVelocityUpdate.h"
 using namespace std;
 
 /*************************************************************************
@@ -29,7 +33,7 @@ public:
    Demo(Position ptUpperRight) :
       ptUpperRight(ptUpperRight)
    {
-      hubble.setPosition(ptUpperRight);
+      //hubble.setPosition(ptUpperRight);
       //ptHubble.setPixelsX(ptUpperRight.getPixelsX() * random(-0.5, 0.5));
       //ptHubble.setPixelsY(ptUpperRight.getPixelsY() * random(-0.5, 0.5));
 
@@ -55,7 +59,7 @@ public:
       angleEarth = 0.0;
       phaseStar = 0;
    }
-   Hubble hubble;
+   //Hubble hubble;
 
    //Position ptHubble;
    Position ptSputnik;
@@ -106,7 +110,7 @@ void callBack(const Interface* pUI, void* p)
    pDemo->timer += 1;
    //cout << pDemo->timer;
    //if (pDemo->timer < 1000000)
-   pDemo->hubble.setPositionNew(1);
+   //pDemo->hubble.setPositionNew(1);
 
 
 
@@ -129,7 +133,7 @@ void callBack(const Interface* pUI, void* p)
 
    // draw satellites
    gout.drawCrewDragon(pDemo->ptCrewDragon, pDemo->angleShip);
-   pDemo->hubble.draw(gout, pDemo->angleShip);
+   //pDemo->hubble.draw(gout, pDemo->angleShip);
    //gout.drawHubble    (pDemo->ptHubble,     pDemo->angleShip);
    gout.drawSputnik   (pDemo->ptSputnik,    pDemo->angleShip);
    gout.drawStarlink  (pDemo->ptStarlink,   pDemo->angleShip);
@@ -140,8 +144,8 @@ void callBack(const Interface* pUI, void* p)
    pt.setPixelsX(pDemo->ptCrewDragon.getPixelsX() + 20);
    pt.setPixelsY(pDemo->ptCrewDragon.getPixelsY() + 20);
    gout.drawCrewDragonRight(pt, pDemo->angleShip); // notice only two parameters are set
-   pt.setPixelsX(pDemo->hubble.getPosition().getPixelsX() + 20);
-   pt.setPixelsY(pDemo->hubble.getPosition().getPixelsY() + 20);
+   //pt.setPixelsX(pDemo->hubble.getPosition().getPixelsX() + 20);
+   //pt.setPixelsY(pDemo->hubble.getPosition().getPixelsY() + 20);
    //pt.setPixelsX(pDemo->ptHubble.getPixelsX() + 20);
    //pt.setPixelsY(pDemo->ptHubble.getPixelsY() + 20);
    gout.drawHubbleLeft(pt, pDemo->angleShip);      // notice only two parameters are set
@@ -184,21 +188,28 @@ int WINAPI wWinMain(
 int main(int argc, char** argv)
 #endif // !_WIN32
 {
+   
    // Initialize OpenGL
-   Position ptUpperRight;
-   ptUpperRight.setZoom(128000.0 /* 128km equals 1 pixel */);
+   /*Position ptUpperRight;
+   ptUpperRight.setZoom(128000.0 ); // 128km equals 1 pixel 
    ptUpperRight.setPixelsX(1000.0);
    ptUpperRight.setPixelsY(1000.0);
-   Interface ui(0, NULL,
-      "Demo",   /* name on the window */
-      ptUpperRight);
+   Interface ui(0, NULL,"Demo",ptUpperRight); // name on the window
 
    // Initialize the demo
    Demo demo(ptUpperRight);
 
    // set everything into action
-   ui.run(callBack, &demo);
-
-
+   ui.run(callBack, &demo);*/
+   //testCases tests;
+   //tests.testEarth();
+   //tests.testUpdatePosition();
+   //tests.testUpdateVelocity();
+   testEarth earth;
+   testPositionUpdate PositionUpdate;
+   testVelocityUpdate VelocityUpdate;
+   earth.run();
+   PositionUpdate.run();
+   VelocityUpdate.run();
    return 0;
 }

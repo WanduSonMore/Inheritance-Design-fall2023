@@ -42,6 +42,15 @@
     <ClCompile Include="testCases.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="testEarth.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="testVelocityUpdate.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="testPositionUpdate.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="test.h">
@@ -69,6 +78,15 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="testCases.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="testEarth.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="testVelocityUpdate.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="testPositionUpdate.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

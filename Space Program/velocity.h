@@ -1,6 +1,7 @@
 #pragma once
 #include<iostream>
 #include<cmath>
+#include<cassert>
 #include "position.h"
 using namespace std;
 

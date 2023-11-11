@@ -1,9 +1,9 @@
 #pragma once
 class testCases
 {
-	void testAltitude();
-	void testGravity();
-	void testUpdateVelocity();
-	void testUpdatePosition();
+public:
+   void testEarth();
+   void testUpdateVelocity();
+   void testUpdatePosition();
 };
 

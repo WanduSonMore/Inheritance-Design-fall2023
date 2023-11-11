@@ -50,7 +50,7 @@ public:
 		//X2 = pow(x, 2);
 		//Y2 = pow(y, 2);
 		height = sqrt(X2 + Y2) - r;
-		return height;
+		return round(height);
 	}
 
 	double getAngle(int x, int y) 
