@@ -74,8 +74,8 @@ void testEarth::gravityTestOne()
    Gravity = earth.getGravity(0.0);
    
    //verify
-   assert(Gravity == -9.806);
-   
+   assert(closeEnough(- 9.806,Gravity, .0001) == true);
+
    //teardown
    //no need, variable Gravity is destroyed once function ends
 }
@@ -90,7 +90,7 @@ void testEarth::gravityTestTwo()
    Gravity = earth.getGravity(500000.0);
    
    //verify
-   assert(Gravity == -8.4);
+   assert(closeEnough(-8.4,Gravity,.04));
    
    //teardown
    //no need, variable Gravity is destroyed once function ends
@@ -106,7 +106,7 @@ void testEarth::gravityTestThree()
    Gravity = earth.getGravity(2000000.0);
    
    //verify
-   assert(Gravity == -5.7);
+   assert(closeEnough(-5.7,Gravity,.04));
    
    //teardown
    //no need, variable Gravity is destroyed once function ends

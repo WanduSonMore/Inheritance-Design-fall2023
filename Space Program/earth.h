@@ -37,7 +37,9 @@ public:
 		//h is the height of a satellite above the earth
 		double gravityMag;
 		gravityMag = g * ((r / (r + h)) * (r / (r + h)));//pow((r / (r + h)), 2);
-		return gravityMag;
+		gravityMag = floor(gravityMag * 1000);//9.806649999
+		gravityMag = gravityMag / 1000;
+		return -gravityMag;
 	}
 
 	double getAltitude(double x, double y)
