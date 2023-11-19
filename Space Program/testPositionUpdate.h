@@ -2,6 +2,13 @@
 
 class testPositionUpdate
 {
+private:
+    bool closeEnough(double value, double test, double tolerance) const
+    {
+        double difference = value - test;
+        return (difference >= -tolerance) && (difference <= tolerance);
+    }
+
 public:
    //run is a function that simply calls and runs through every test function
    void run()

@@ -13,6 +13,8 @@ public:
 		position.setPixelsX(x);
 		position.setMetersY(y);
 		position.setPixelsY(y);
+		double metersx = position.getMetersX();
+		double metersy = position.getMetersY();
 		Velocity velocity1(dx, dy);
 		velocity = velocity1;
 	/*	draw();*/
@@ -27,11 +29,25 @@ public:
 
 
 	}
+
+	void set(double x, double y, double dx, double dy)
+	{
+		position.setMetersX(x);
+		position.setMetersY(y);
+		velocity.setDx(dx);
+		velocity.setDy(dy);
+	}
+
 	Position getPosition() {
 		return position;
 	}
 	void updatePosition(double x, double y, int t) {
-
+		velocity.updateVelocity(x, y, t);
+		for (int i = 0; i < t; i++)
+		{
+			position.addMetersX(velocity.getDx());
+			position.addMetersY(velocity.getDy());
+		}
 	}
 	void setPositionNew(int timer) {
 		angle = earth.getAngle(position.getMetersX(), position.getMetersY());

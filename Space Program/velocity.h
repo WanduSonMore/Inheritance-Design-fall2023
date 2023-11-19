@@ -43,6 +43,14 @@ public:
 		dx = dx + (x * t);
 		dy = dy + (y * t);
 	}
+	void setDx(double x)
+	{
+		dx = x;
+	}
+	void setDy(double y)
+	{
+		dy = y;
+	}
 	double getDx() {
 		return dx;
 	}
