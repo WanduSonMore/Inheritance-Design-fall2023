@@ -41,7 +41,7 @@ public:
 	Position getPosition() {
 		return position;
 	}
-	void updatePosition(double x, double y, int t) {
+	void updatePosition(double ddx, double ddy, int t) {
 		//D += (V * T) + (.5 * A * T^2)
 		position.addMetersX((velocity.getDx() * t) + (.5 * ddx * (t * t)));
 		position.addMetersY((velocity.getDy() * t) + (.5 * ddy * (t * t)));

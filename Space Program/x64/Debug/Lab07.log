@@ -1,26 +1,23 @@
-﻿  earth.cpp
-  Lab07.cpp
-C:\Users\josep\OneDrive\Documents\GitHub\Inheritance-Design-fall2023\Space Program\satellite.h(53,68): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
-C:\Users\josep\OneDrive\Documents\GitHub\Inheritance-Design-fall2023\Space Program\satellite.h(53,45): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+﻿  Lab07.cpp
+C:\Users\josep\OneDrive\Documents\GitHub\Inheritance-Design-fall2023\Space Program\satellite.h(51,68): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+C:\Users\josep\OneDrive\Documents\GitHub\Inheritance-Design-fall2023\Space Program\satellite.h(51,45): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
   position.cpp
   satellite.cpp
-C:\Users\josep\OneDrive\Documents\GitHub\Inheritance-Design-fall2023\Space Program\satellite.h(53,68): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
-C:\Users\josep\OneDrive\Documents\GitHub\Inheritance-Design-fall2023\Space Program\satellite.h(53,45): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+C:\Users\josep\OneDrive\Documents\GitHub\Inheritance-Design-fall2023\Space Program\satellite.h(51,68): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+C:\Users\josep\OneDrive\Documents\GitHub\Inheritance-Design-fall2023\Space Program\satellite.h(51,45): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
   test.cpp
   testCases.cpp
-C:\Users\josep\OneDrive\Documents\GitHub\Inheritance-Design-fall2023\Space Program\satellite.h(53,68): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
-C:\Users\josep\OneDrive\Documents\GitHub\Inheritance-Design-fall2023\Space Program\satellite.h(53,45): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+C:\Users\josep\OneDrive\Documents\GitHub\Inheritance-Design-fall2023\Space Program\satellite.h(51,68): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+C:\Users\josep\OneDrive\Documents\GitHub\Inheritance-Design-fall2023\Space Program\satellite.h(51,45): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
 C:\Users\josep\OneDrive\Documents\GitHub\Inheritance-Design-fall2023\Space Program\testCases.cpp(31,4): warning C4156: deletion of an array expression without using the array form of 'delete'; array form substituted
 C:\Users\josep\OneDrive\Documents\GitHub\Inheritance-Design-fall2023\Space Program\testCases.cpp(31,4): warning C4154: deletion of an array expression; conversion to pointer supplied
 C:\Users\josep\OneDrive\Documents\GitHub\Inheritance-Design-fall2023\Space Program\testCases.cpp(32,4): warning C4156: deletion of an array expression without using the array form of 'delete'; array form substituted
 C:\Users\josep\OneDrive\Documents\GitHub\Inheritance-Design-fall2023\Space Program\testCases.cpp(32,4): warning C4154: deletion of an array expression; conversion to pointer supplied
   testEarth.cpp
   testPositionUpdate.cpp
-C:\Users\josep\OneDrive\Documents\GitHub\Inheritance-Design-fall2023\Space Program\satellite.h(53,68): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
-C:\Users\josep\OneDrive\Documents\GitHub\Inheritance-Design-fall2023\Space Program\satellite.h(53,45): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+C:\Users\josep\OneDrive\Documents\GitHub\Inheritance-Design-fall2023\Space Program\satellite.h(51,68): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+C:\Users\josep\OneDrive\Documents\GitHub\Inheritance-Design-fall2023\Space Program\satellite.h(51,45): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
   testVelocityUpdate.cpp
-  uiDraw.cpp
-  uiInteract.cpp
   velocity.cpp
   Generating Code...
   Lab07.vcxproj -> C:\Users\josep\OneDrive\Documents\GitHub\Inheritance-Design-fall2023\Space Program\x64\Debug\Lab07.exe
