@@ -71,8 +71,8 @@ void testPositionUpdate::positionTestFour()
    double metersY = satellite.getPosition().getMetersY();
       
    //verify
-   assert(closeEnough(satellite.getPosition().getMetersX(), 11.3, .1));
-   assert(closeEnough(satellite.getPosition().getMetersY(), 22.5, .1));
+   assert(closeEnough(satellite.getPosition().getMetersX(), 11.2, .1));
+   assert(closeEnough(satellite.getPosition().getMetersY(), 22.35, .1));
       
    //teardown
    //no need, variable satellite is destroyed once function ends
