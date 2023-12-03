@@ -139,10 +139,12 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="bullet.cpp" />
     <ClCompile Include="earth.cpp" />
     <ClCompile Include="Lab07.cpp" />
     <ClCompile Include="position.cpp" />
     <ClCompile Include="satellite.cpp" />
+    <ClCompile Include="spaceship.cpp" />
     <ClCompile Include="test.cpp" />
     <ClCompile Include="testCases.cpp" />
     <ClCompile Include="testEarth.cpp" />
@@ -153,9 +155,11 @@
     <ClCompile Include="velocity.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="bullet.h" />
     <ClInclude Include="earth.h" />
     <ClInclude Include="position.h" />
     <ClInclude Include="satellite.h" />
+    <ClInclude Include="spaceship.h" />
     <ClInclude Include="test.h" />
     <ClInclude Include="testCases.h" />
     <ClInclude Include="testEarth.h" />

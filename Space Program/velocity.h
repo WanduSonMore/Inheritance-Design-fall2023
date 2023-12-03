@@ -11,10 +11,16 @@ public:
 	Velocity() {
 		dx = 0.0;
 		dy = 0.0;
+		acceleration = 0;
 	}
 	Velocity(double x, double y) {
 		dx = x;
 		dy = y;
+	}
+	Velocity(double angle) {
+		acceleration = 0.5;
+		dx = horizontalAccel(angle);
+		dy - verticalAccel(angle);
 	}
 	double horizontalAccel(double angle) {
 		return acceleration * sin(angle);
@@ -26,7 +32,7 @@ public:
 		return (position.getMetersX() + dx * time + (0.5 * horizontalAccel(angle) * (time * time )));
 	}
 	double distanceFormulaY(Position position, double angle, int time) {
-		return (position.getMetersY() + dx * time + (0.5 * verticalAccel(angle) * (time * time)));
+		return (position.getMetersY() + dy * time + (0.5 * verticalAccel(angle) * (time * time)));
 	}
 	void distanceFormulaSpeed(Position position, double angle, int time) {
 		speed = speed + velocity * time + (0.5 * acceleration * (time * time));
@@ -57,6 +63,13 @@ public:
 	double getDy() {
 		return dy;
 	}
+	double getAcceleration() {
+		return acceleration;
+	}
+	void addAcceleration(double value, double angle) {
+		acceleration = acceleration + value;
+		updateVelocity(horizontalAccel(angle), verticalAccel(angle), 1);
+	}
 	//void calculateVelocity() {
 
 	//}
@@ -65,9 +78,10 @@ protected:
 	double acceleration;
 	double dx;
 	double dy;
+	double speed;
 	//double ddx;
 	//double ddy;
 	//double time;
-	double speed;
+	
 };
 

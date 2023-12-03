@@ -8,6 +8,8 @@
 class Satellite
 {
 public: 
+	Satellite() {
+	}
 	Satellite(double x, double y, double dx, double dy) {
 		position.setMetersX(x);
 		position.setPixelsX(x);
@@ -18,6 +20,10 @@ public:
 		Velocity velocity1(dx, dy);
 		velocity = velocity1;
 	/*	draw();*/
+	}
+	Satellite(Position ptUpperRight) {
+		position.setPixelsX(ptUpperRight.getPixelsX() * random(-0.5, 0.5));
+		position.setPixelsY(ptUpperRight.getPixelsY() * random(-0.5, 0.5));
 	}
 	
 	void setPosition(Position ptUpperRight)
@@ -43,9 +49,9 @@ public:
 	}
 	void updatePosition(double x, double y, int t) {
 		//D += (V * T) + (.5 * A * T^2)
-		position.addMetersX((velocity.getDx() * t) + (.5 * ddx * (t * t)));
-		position.addMetersY((velocity.getDy() * t) + (.5 * ddy * (t * t)));
-		velocity.updateVelocity(ddx, ddy, t);
+		position.addMetersX((velocity.getDx() * t) + (.5 * x * (t * t)));
+		position.addMetersY((velocity.getDy() * t) + (.5 * y * (t * t)));
+		velocity.updateVelocity(x, y, t);
 	}
 	void setPositionNew(int timer) {
 		angle = earth.getAngle(position.getMetersX(), position.getMetersY());
@@ -66,6 +72,12 @@ protected:
 
 class Hubble : public Satellite {
 public:
+	Hubble() {
+	}
+	void setAll(Position ptUpperRight) {
+		position.setPixelsX(ptUpperRight.getPixelsX() * random(-0.5, 0.5));
+		position.setPixelsY(ptUpperRight.getPixelsY() * random(-0.5, 0.5));
+	}
 	void draw(ogstream & gout, double angleShip) {
 		//Position pt;
 		//ogstream gout(pt);
