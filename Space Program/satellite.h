@@ -49,9 +49,9 @@ public:
 	}
 	void updatePosition(double ddx, double ddy, int t) {
 		//D += (V * T) + (.5 * A * T^2)
-		position.addMetersX((velocity.getDx() * t) + (.5 * x * (t * t)));
-		position.addMetersY((velocity.getDy() * t) + (.5 * y * (t * t)));
-		velocity.updateVelocity(x, y, t);
+		position.addMetersX((velocity.getDx() * t) + (.5 * ddx * (t * t)));
+		position.addMetersY((velocity.getDy() * t) + (.5 * ddy * (t * t)));
+		velocity.updateVelocity(ddx, ddy, t);
 	}
 	void setPositionNew(int timer) {
 		angle = earth.getAngle(position.getMetersX(), position.getMetersY());
