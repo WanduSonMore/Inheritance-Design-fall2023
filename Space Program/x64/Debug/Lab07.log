@@ -1,5 +1,36 @@
-﻿  Lab07.cpp
-C:\git\Inheritance Design\Inheritance-Design-fall2023\Inheritance-Design-fall2023-main\Space Program\velocity.h(23,6): warning C4552: '-': result of expression not used
-C:\git\Inheritance Design\Inheritance-Design-fall2023\Inheritance-Design-fall2023-main\Space Program\satellite.h(57,68): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
-C:\git\Inheritance Design\Inheritance-Design-fall2023\Inheritance-Design-fall2023-main\Space Program\satellite.h(57,45): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
-  Lab07.vcxproj -> C:\git\Inheritance Design\Inheritance-Design-fall2023\Inheritance-Design-fall2023-main\Space Program\x64\Debug\Lab07.exe
+﻿  bullet.cpp
+C:\Users\josep\OneDrive\Documents\GitHub\Inheritance-Design-fall2023\Space Program\velocity.h(23,6): warning C4552: '-': result of expression not used
+  earth.cpp
+  Lab07.cpp
+C:\Users\josep\OneDrive\Documents\GitHub\Inheritance-Design-fall2023\Space Program\velocity.h(23,6): warning C4552: '-': result of expression not used
+C:\Users\josep\OneDrive\Documents\GitHub\Inheritance-Design-fall2023\Space Program\satellite.h(56,68): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+C:\Users\josep\OneDrive\Documents\GitHub\Inheritance-Design-fall2023\Space Program\satellite.h(56,45): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+  position.cpp
+  satellite.cpp
+C:\Users\josep\OneDrive\Documents\GitHub\Inheritance-Design-fall2023\Space Program\velocity.h(23,6): warning C4552: '-': result of expression not used
+C:\Users\josep\OneDrive\Documents\GitHub\Inheritance-Design-fall2023\Space Program\satellite.h(56,68): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+C:\Users\josep\OneDrive\Documents\GitHub\Inheritance-Design-fall2023\Space Program\satellite.h(56,45): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+  spaceship.cpp
+C:\Users\josep\OneDrive\Documents\GitHub\Inheritance-Design-fall2023\Space Program\velocity.h(23,6): warning C4552: '-': result of expression not used
+  test.cpp
+  testCases.cpp
+C:\Users\josep\OneDrive\Documents\GitHub\Inheritance-Design-fall2023\Space Program\velocity.h(23,6): warning C4552: '-': result of expression not used
+C:\Users\josep\OneDrive\Documents\GitHub\Inheritance-Design-fall2023\Space Program\satellite.h(56,68): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+C:\Users\josep\OneDrive\Documents\GitHub\Inheritance-Design-fall2023\Space Program\satellite.h(56,45): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+C:\Users\josep\OneDrive\Documents\GitHub\Inheritance-Design-fall2023\Space Program\testCases.cpp(31,4): warning C4156: deletion of an array expression without using the array form of 'delete'; array form substituted
+C:\Users\josep\OneDrive\Documents\GitHub\Inheritance-Design-fall2023\Space Program\testCases.cpp(31,4): warning C4154: deletion of an array expression; conversion to pointer supplied
+C:\Users\josep\OneDrive\Documents\GitHub\Inheritance-Design-fall2023\Space Program\testCases.cpp(32,4): warning C4156: deletion of an array expression without using the array form of 'delete'; array form substituted
+C:\Users\josep\OneDrive\Documents\GitHub\Inheritance-Design-fall2023\Space Program\testCases.cpp(32,4): warning C4154: deletion of an array expression; conversion to pointer supplied
+  testEarth.cpp
+  testPositionUpdate.cpp
+C:\Users\josep\OneDrive\Documents\GitHub\Inheritance-Design-fall2023\Space Program\velocity.h(23,6): warning C4552: '-': result of expression not used
+C:\Users\josep\OneDrive\Documents\GitHub\Inheritance-Design-fall2023\Space Program\satellite.h(56,68): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+C:\Users\josep\OneDrive\Documents\GitHub\Inheritance-Design-fall2023\Space Program\satellite.h(56,45): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+  testVelocityUpdate.cpp
+C:\Users\josep\OneDrive\Documents\GitHub\Inheritance-Design-fall2023\Space Program\velocity.h(23,6): warning C4552: '-': result of expression not used
+  uiDraw.cpp
+  uiInteract.cpp
+  velocity.cpp
+C:\Users\josep\OneDrive\Documents\GitHub\Inheritance-Design-fall2023\Space Program\velocity.h(23,6): warning C4552: '-': result of expression not used
+  Generating Code...
+  Lab07.vcxproj -> C:\Users\josep\OneDrive\Documents\GitHub\Inheritance-Design-fall2023\Space Program\x64\Debug\Lab07.exe

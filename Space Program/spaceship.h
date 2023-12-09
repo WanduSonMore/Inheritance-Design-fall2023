@@ -11,9 +11,9 @@ public:
 	Spaceship() {
 		angle = 0;
 	}
-	void setAll(Position ptUpperRight) {
-		position.setPixelsX(ptUpperRight.getPixelsX() * random(-0.5, 0.5));
-		position.setPixelsY(ptUpperRight.getPixelsY() * random(-0.5, 0.5));
+	void setAll(Position ptUpperRight, double posX, double posY) {
+		position.setPixelsX(posX);
+		position.setPixelsY(posY);
 	}
 	void draw(ogstream& gout, const Interface* pUI) {
 		//Position pt;
