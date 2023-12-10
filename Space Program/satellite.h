@@ -44,6 +44,44 @@ public:
 		velocity.setDy(dy);
 	}
 
+	void kick()
+	{
+		kickT = random(5000, 9000);
+		kickAngle = random(0, 360);
+		kickRad = kickAngle * (pi / 180);
+		kickx = kickT * cos(kickRad);
+		kicky = kickT * sin(kickRad);
+	}
+
+	void create_piece(int index, int radius, double offx, double offy)
+	{
+		kick();
+		Velocity kickvel(kickx + velocity.getDx(), kicky + velocity.getDy());
+		pieces_vel[index] = kickvel;
+		Position offset;
+		offset.setPixelsX(offx);
+		offset.setPixelsY(offy);
+		Position pos;
+		pos.setPixelsX(position.getPixelsX() + (radius * cos(kickRad)));
+		pos.setPixelsY(position.getPixelsY() + (radius * sin(kickRad)));
+		pieces_pos[index] = pos;
+		pieces_angle[index] = kickAngle;
+		pieces_offset[index] = offset;
+	}
+
+	void create_fragment(int index, Position parent_pos, Velocity parent_vel)
+	{
+		kick();
+		Velocity kickOne(kickx + parent_vel.getDx(), kicky + parent_vel.getDy());
+		fragments_vel[index] = kickOne;
+		Position pos;
+		pos.setPixelsX(parent_pos.getPixelsX() + (4 * cos(kickRad)));
+		pos.setPixelsY(parent_pos.getPixelsY() + (4 * sin(kickRad)));
+		fragments_pos[index] = pos;
+		fragments_angle[index] = kickAngle;
+		fragments_expiration[index] = random(50,100);
+	}
+
 	Position getPosition() {
 		return position;
 	}
@@ -68,6 +106,24 @@ protected:
 	double angle = 0;
 	//double angleShip;
 	double angleEarth;
+	double kickT;
+	double kickAngle;
+	double kickRad;
+	double kickx;
+	double kicky;
+
+
+	Position pieces_pos[4];
+	Position pieces_offset[4];
+	Velocity pieces_vel[4];
+	double pieces_angle[4];
+
+	Position fragments_pos[11];
+	Velocity fragments_vel[11];
+	double fragments_angle[11];
+	int fragments_expiration[11];
+
+	bool broken = false;
 };
 
 class Hubble : public Satellite {
@@ -83,83 +139,40 @@ public:
 	//hubble breaks into 4 pieces
 	void break_apart(ogstream & gout, double angleShip) {
 
-		double kickT = random(5000,9000);
-		double angle = random(0, 360);
-		double rad = angle * (pi / 180);
-		double kickx = kickT * cos(rad);
-		double kicky = kickT * sin(rad);
-		Velocity kickOne(kickx + velocity.getDx(), kicky + velocity.getDy());
-		pieces_vel[0] = kickOne;
-		Position posTelescope;
-		posTelescope.setPixelsX(2.0);
-		posTelescope.setPixelsY(0.0);
-		Position pos;
-		pos.setPixelsX(position.getPixelsX() + (4 * cos(rad)));
-		pos.setPixelsY(position.getPixelsY() + (4 * sin(rad)));
-		gout.drawHubbleTelescope(position, angleShip, posTelescope);
+		create_piece(0, 10, 2.0, 0.0);
+		gout.drawHubbleTelescope(pieces_pos[0], pieces_angle[0], pieces_offset[0]);
 
+		create_piece(1, 7, -10.0, 0.0);
+		gout.drawHubbleComputer(pieces_pos[1], pieces_angle[1], pieces_offset[1]);
 
-		kickT = random(5000, 9000);
-		angle = random(0, 360);
-		rad = angle * (pi / 180);
-		kickx = kickT * cos(rad);
-		kicky = kickT * sin(rad);
-		Velocity kickTwo(kickx + velocity.getDx(), kicky + velocity.getDy());
-		pieces_vel[1] = kickTwo;
+		create_piece(2, 8, 1.0, -8.0);
+		gout.drawHubbleRight(pieces_pos[2], pieces_angle[2], pieces_offset[2]);
 
-		kickT = random(5000, 9000);
-		angle = random(0, 360);
-		rad = angle * (pi / 180);
-		kickx = kickT * cos(rad);
-		kicky = kickT * sin(rad);
-		Velocity kickThree(kickx + velocity.getDx(), kicky + velocity.getDy());
-		pieces_vel[2] = kickThree;
+		create_piece(3, 8, 1.0, 8.0);
+		gout.drawHubbleLeft(pieces_pos[3], pieces_angle[3], pieces_offset[3]);
 
-		kickT = random(5000, 9000);
-		angle = random(0, 360);
-		rad = angle * (pi / 180);
-		kickx = kickT * cos(rad);
-		kicky = kickT * sin(rad);
-		Velocity kickFour(kickx + velocity.getDx(), kicky + velocity.getDy());
-		pieces_vel[3] = kickFour;
-
-		
-
-		Position posComputer;
-		posComputer.setPixelsX(-10.0);
-		posComputer.setPixelsY(0.0);
-		gout.drawHubbleComputer(position, angleShip, posComputer);
-
-		Position posRight;
-		posRight.setPixelsX(1.0);
-		posRight.setPixelsY(-8.0);
-		gout.drawHubbleRight(position, angleShip, posRight);
-
-
-		Position posLeft;
-		posLeft.setPixelsX(1.0);
-		posLeft.setPixelsY(8.0);
-		gout.drawHubbleLeft(position, angleShip, posLeft);
-
-		pieces_pos[0] = position;
-		pieces_pos[1] = position;
-		pieces_pos[2] = position;
-		pieces_pos[3] = position;
-
-		pieces_offset[0] = posTelescope;
-		pieces_offset[1] = posComputer;
-		pieces_offset[2] = posRight;
-		pieces_offset[3] = posLeft;
+		broken = true;
 	}
 
-	Position pieces_pos[4];
-	Position pieces_offset[4];
-	Velocity pieces_vel[4];
-	double pieces_angle[4];
-	Position fragments_pos[9];
-	Velocity fragments_vel[9];
-	double fragments_angle[9];
-	int fragments_expiration[9];
+	void break_pieces(ogstream& gout, int index) {
+		int num = 0;
+		for (Position i : fragments_pos) {
+			num += 1;
+		}
+		create_fragment(num, pieces_pos[num], pieces_vel[num]);
+		gout.drawFragment(fragments_pos[num], fragments_angle[num]);
+		num += 1;
+
+		create_fragment(num, pieces_pos[num], pieces_vel[num]);
+		gout.drawFragment(fragments_pos[num], fragments_angle[num]);
+		num += 1;
+
+		if (index == 0)
+			create_fragment(num, pieces_pos[num], pieces_vel[num]);
+			gout.drawFragment(fragments_pos[num], fragments_angle[num]);
+
+		pieces_pos[index].setMeters(100000000000,-100000000000);
+	}
 };
 
 class Sputnik : public Satellite {
@@ -173,25 +186,18 @@ public:
 	//Sputnik breaks into 4 fragments
 	void break_apart(ogstream& gout, double angleShip) {
 
-		gout.drawFragment();
-		fragments_pos[0] = position;
-		fragments_pos[1] = position;
-		fragments_pos[2] = position;
-		fragments_pos[3] = position;
+		create_fragment(0, position, velocity);
+		gout.drawFragment(fragments_pos[0], fragments_angle[0]);
 
-		Velocity kickOne(random(-700, 700) + velocity.getDx(), random(-700, 700) + velocity.getDy());
-		fragments_vel[0] = kickOne;
-		Velocity kickTwo(random(-700, 700) + velocity.getDx(), random(-700, 700) + velocity.getDy());
-		fragments_vel[1] = kickTwo;
-		Velocity kickThree(random(-700, 700) + velocity.getDx(), random(-700, 700) + velocity.getDy());
-		fragments_vel[2] = kickThree;
-		Velocity kickFour(random(-700, 700) + velocity.getDx(), random(-700, 700) + velocity.getDy());
-		fragments_vel[3] = kickFour;
+		create_fragment(1, position, velocity);
+		gout.drawFragment(fragments_pos[1], fragments_angle[1]);
+
+		create_fragment(2, position, velocity);
+		gout.drawFragment(fragments_pos[2], fragments_angle[2]);
+
+		create_fragment(3, position, velocity);
+		gout.drawFragment(fragments_pos[3], fragments_angle[3]);
 	}
-	Position fragments_pos[4];
-	Velocity fragments_vel[4];
-	double fragments_angle[4];
-	int fragments_expiration[4];
 };
 
 class GPS : public Satellite {
@@ -203,15 +209,43 @@ public:
 	}
 
 	//GPS breaks into 2 fragments and 3 pieces, should the pieces break too then each one becomes 3 fragments
+	void break_apart(ogstream& gout, double angleShip) {
 
-	Position pieces_pos[3];
-	Position pieces_offset[3];
-	Velocity pieces_vel[3];
-	double pieces_angle[3];
-	Position fragments_pos[11];
-	Velocity fragments_vel[11];
-	double fragments_angle[11];
-	int fragments_expiration[11];
+		create_piece(0, 7, 0.0, 0.0);
+		gout.drawGPSCenter(pieces_pos[0], pieces_angle[0]);
+
+		create_piece(1, 8, 0.0, 12.0);
+		gout.drawGPSRight(pieces_pos[1], pieces_angle[1], pieces_offset[1]);
+
+		create_piece(2, 8, 0.0, -12.0);
+		gout.drawGPSLeft(pieces_pos[2], pieces_angle[2], pieces_offset[2]);
+
+		create_fragment(0, position, velocity);
+		gout.drawFragment(fragments_pos[0], fragments_angle[0]);
+
+		create_fragment(1, position, velocity);
+		gout.drawFragment(fragments_pos[1], fragments_angle[1]);
+	}
+
+	void break_pieces(ogstream& gout, int index) {
+		int num = 0;
+		for (Position i : fragments_pos) {
+			num += 1;
+		}
+		create_fragment(num, pieces_pos[num], pieces_vel[num]);
+		gout.drawFragment(fragments_pos[num], fragments_angle[num]);
+		num += 1;
+
+		create_fragment(num, pieces_pos[num], pieces_vel[num]);
+		gout.drawFragment(fragments_pos[num], fragments_angle[num]);
+		num += 1;
+
+
+		create_fragment(num, pieces_pos[num], pieces_vel[num]);
+		gout.drawFragment(fragments_pos[num], fragments_angle[num]);
+
+		pieces_pos[index].setMeters(100000000000, -100000000000);
+	}
 };
 
 class Dragon : public Satellite {
@@ -223,15 +257,47 @@ public:
 	}
 
 	//Dragon breaks into 3 pieces and 2 fragments
+	void break_apart(ogstream& gout, double angleShip)
+	{
+		create_piece(0, 6, 0.0, 0.0);
+		gout.drawCrewDragonCenter(pieces_pos[0], pieces_angle[0]);
 
-	Position pieces_pos[3];
-	Position pieces_offset[3];
-	Velocity pieces_vel[3];
-	double pieces_angle[3];
-	Position fragments_pos[10];
-	Velocity fragments_vel[10];
-	double fragments_angle[10];
-	int fragments_expiration[10];
+		create_piece(1, 6, -1.0, 11.0);
+		gout.drawCrewDragonRight(pieces_pos[1], pieces_angle[1], pieces_offset[1]);
+
+		create_piece(2, 6, -1.0, -11.0);
+		gout.drawCrewDragonRight(pieces_pos[2], pieces_angle[2], pieces_offset[2]);
+
+		create_fragment(0, position, velocity);
+		gout.drawFragment(fragments_pos[0], fragments_angle[0]);
+
+		create_fragment(1, position, velocity);
+		gout.drawFragment(fragments_pos[1], fragments_angle[1]);
+	}
+
+	void break_pieces(ogstream& gout, int index) {
+		int num = 0;
+		for (Position i : fragments_pos) {
+			num += 1;
+		}
+		create_fragment(num, pieces_pos[num], pieces_vel[num]);
+		gout.drawFragment(fragments_pos[num], fragments_angle[num]);
+		num += 1;
+
+		create_fragment(num, pieces_pos[num], pieces_vel[num]);
+		gout.drawFragment(fragments_pos[num], fragments_angle[num]);
+		num += 1;
+
+		if (index == 0)
+			create_fragment(num, pieces_pos[num], pieces_vel[num]);
+			gout.drawFragment(fragments_pos[num], fragments_angle[num]);
+			num += 1;
+
+			create_fragment(num, pieces_pos[num], pieces_vel[num]);
+			gout.drawFragment(fragments_pos[num], fragments_angle[num]);
+
+		pieces_pos[index].setMeters(100000000000, -100000000000);
+	}
 };
 
 class Starlink : public Satellite {
@@ -242,13 +308,37 @@ public:
 		gout.drawStarlink(position, angleShip);
 	}
 	//starlink breaks into 2 pieces and 2 fragments
+	void break_apart(ogstream& gout, double angleShip) 
+	{
+		create_piece(0,2,-1.0,0.0);
+		gout.drawStarlinkBody(pieces_pos[0], pieces_angle[0], pieces_offset[0]);
 
-	Position pieces_pos[2];
-	Position pieces_offset[2];
-	Velocity pieces_vel[2];
-	double pieces_angle[2];
-	Position fragments_pos[8];
-	Velocity fragments_vel[8];
-	double fragments_angle[8];
-	int fragments_expiration[8];
+		create_piece(1, 4, 8.0, -2.0);
+		gout.drawStarlinkArray(pieces_pos[1], pieces_angle[1], pieces_offset[1]);
+
+		create_fragment(0, position, velocity);
+		gout.drawFragment(fragments_pos[0], fragments_angle[0]);
+
+		create_fragment(1, position, velocity);
+		gout.drawFragment(fragments_pos[1], fragments_angle[1]);
+	}
+
+	void break_pieces(ogstream& gout, int index) {
+		int num = 0;
+		for (Position i : fragments_pos) {
+			num += 1;
+		}
+		create_fragment(num, pieces_pos[num], pieces_vel[num]);
+		gout.drawFragment(fragments_pos[num], fragments_angle[num]);
+		num += 1;
+
+		create_fragment(num, pieces_pos[num], pieces_vel[num]);
+		gout.drawFragment(fragments_pos[num], fragments_angle[num]);
+		num += 1;
+
+		create_fragment(num, pieces_pos[num], pieces_vel[num]);
+		gout.drawFragment(fragments_pos[num], fragments_angle[num]);
+
+		pieces_pos[index].setMeters(100000000000, -100000000000);
+	}
 };
