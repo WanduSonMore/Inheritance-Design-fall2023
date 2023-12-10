@@ -37,9 +37,10 @@ public:
 		//h is the height of a satellite above the earth
 		double gravityMag;
 		gravityMag = g * ((r / (r + h)) * (r / (r + h)));//pow((r / (r + h)), 2);
+		gravityMag = g * ((r / (r + h)) * (r / (r + h)));
 		gravityMag = floor(gravityMag * 1000);//9.806649999
 		gravityMag = gravityMag / 1000;
-		return -gravityMag;
+		return gravityMag;
 	}
 
 	double getAltitude(double x, double y)
@@ -63,7 +64,7 @@ public:
 		//Sx and Sy are the satellites x and y position
 		//Sx and Sy are going to be the x and y variables given to the func when called
 		double angle;
-		angle = atan2(position.getMetersX() - x, position.getMetersY() - y);
+		angle = atan2(position.getMetersY() - y, position.getMetersX() - x);
 
 		return angle;
 	}

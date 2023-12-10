@@ -37,6 +37,8 @@ public:
    Demo(Position ptUpperRight) :
       ptUpperRight(ptUpperRight)
    {
+       timeDilation = 24 * 60;
+
        hubble.set(0.0, -42164000.0, 3100.0, 0.0);
        ptHub = &hubble;
        sats[0] = &hubble;
@@ -123,6 +125,15 @@ public:
            gout.drawStar(stars[i], phaseStars[i]);
        }
    }
+
+   void updateAll() {
+       spaceship.updatePosition();
+       updateBullets();
+       for (Satellite* i : sats) {
+           i->moveSat();
+       }
+   }
+
    void updateBullets() {
        //if (bullets.empty() != true)
         for (Bullet* obj : bullets) {
@@ -138,6 +149,7 @@ public:
    void createBullet() {
 
    }
+   int timeDilation;
    Satellite* sats[10];
    Position stars[220];
    Hubble hubble;
@@ -212,8 +224,7 @@ void callBack(const Interface* pUI, void* p)
    if (pUI->isSpace())
        pDemo->addBullet();
    //   pDemo->ptShip.addPixelsX(1.0);
-   pDemo->spaceship.updatePosition();
-   pDemo->updateBullets();
+   pDemo->updateAll();
    //if (pDemo->timer < 1) {
 
    //}

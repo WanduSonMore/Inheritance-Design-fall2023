@@ -82,6 +82,21 @@ public:
 		fragments_expiration[index] = random(50,100);
 	}
 
+	void moveSat() {
+		angle = earth.getAngle(position.getMetersX(), position.getMetersY());
+		altitude = earth.getAltitude(position.getMetersX(), position.getMetersY());
+		gravityMag = earth.getGravity(altitude);
+		double ddx;
+		double ddy;
+		ddx = gravityMag * cos(angle);
+		ddy = gravityMag * sin(angle);
+		double addX = (velocity.getDx() * 48) + (.5 * ddx * (48 * 48));
+		double addY = (velocity.getDy() * 48) + (.5 * ddy * (48 * 48));
+		position.addMetersX(addX);
+		position.addMetersY(addY);
+		velocity.updateVelocity(ddx, ddy, 48);
+	}
+
 	Position getPosition() {
 		return position;
 	}
@@ -104,6 +119,8 @@ protected:
 	Earth earth; // remove and move to demo
 	unsigned char phaseStar;
 	double angle = 0;
+	double altitude;
+	double gravityMag;
 	//double angleShip;
 	double angleEarth;
 	double kickT;
